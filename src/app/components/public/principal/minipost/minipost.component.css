@@ -1,0 +1,110 @@
+.know{
+    height: 100%;
+    padding-bottom: 6rem;
+}
+
+
+
+.title{
+    font-size: calc(1.29375rem + 0.19125*(100vw - 36rem)/39);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.tit-b{
+    
+    font-size: calc(1.71098rem + 0.87648*(100vw - 40rem)/50);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+    margin-top: 8rem;
+}
+
+#principal{
+    margin-bottom: 4rem;
+}
+.principal, .img-principal{
+   
+   /*  background-image: url('https://lh3.googleusercontent.com/pXMNJMBO3ONO3C8CHhq9hl5NXGhzli8TobpH2EdWR9bGd-CMGPhxSfZh9_wOLalC7ZtrOJDIOikE5-hEPCs42RN7=w640-h400-e365-rj-sc0x00ffffff');
+     */
+    height: 390px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    
+}
+
+.principal, img{
+   
+    /*  background-image: url('https://lh3.googleusercontent.com/pXMNJMBO3ONO3C8CHhq9hl5NXGhzli8TobpH2EdWR9bGd-CMGPhxSfZh9_wOLalC7ZtrOJDIOikE5-hEPCs42RN7=w640-h400-e365-rj-sc0x00ffffff');
+      */
+     height: 400px;
+     background-repeat: no-repeat;
+     
+ }
+
+ #element-over{
+     padding: 2rem 4rem;
+ }
+
+
+.perfil{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 0.250rem;
+}
+
+.card-title{
+    line-height: 1.2;
+    letter-spacing: -.03em;
+    font-size: calc(1em + 1.5vw)!important;
+    font-weight: bold;
+}
+
+.card-title1{
+    line-height: 1.2;
+    letter-spacing: -.03em;
+    font-size: calc(0.8em + 1vw)!important;
+    font-weight: bold;
+}
+
+.card{
+    border: none;   
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3); 
+    border-radius: 8px;
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
+}
+
+.card-img{
+    border-radius: 8px;
+    border: none;
+}
+
+.card:hover{
+    box-shadow: 3px 23px 57px 16px rgba(0,0,0,0.2);
+    /*zoom a imagen*/
+    transform: scale(1.01);
+}
+
+.sobreponer{
+    position: relative;
+}
+
+.sobre{
+    padding-left: 0.225rem;
+    padding-right: 0.225rem;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: absolute;
+    
+    bottom: 120px;
+    border: none;
+    background: #f6f6f7;
+    font-size: 0.8rem;
+}
+.clock{
+    width: 24px;
+    height: 24px;
+    margin-left:25px ;
+}

@@ -1,0 +1,60 @@
+<div id="wrapper" style="padding-bottom: 6rem;">
+  <div class="row" >
+    
+    <div class="boton-oculto col-12">
+      <app-mininav></app-mininav>
+      
+    </div> 
+
+    <div class="col col-xs-0 col-sm-0 col-md-0 col-lg-2 col-xl-2">
+      <app-sidenav></app-sidenav>
+    </div>
+    <!-- <div class="col-8">
+          <router-outlet></router-outlet>
+      </div>   -->
+
+    <div id="componentes" class="col-lg-10 col-md-11 col-sm-12">
+      <!-- es la pagina principal de blog -->
+      <div class="row mt-auto">
+        <div class="col-12 ml-1">
+          <div class="row">
+            <!-- inicia el boton que se oculta -->
+
+            <div class="col-12">
+              <!-- <div class="boton-oculto">
+                  <input class="btn btn-primary" onclick="toggleSidebar()" type="button"><span class="navbar-toggler-icon"></span>
+              </div> -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <!-- incia parte del buscador -->
+                    <div class="row">
+                      <div
+                        class="col col-xs-12 col-sm-12 col-md-6 col-lg-8 col-xl-7 mt-4">
+                        <app-search></app-search>
+                      </div>
+
+                      <!-- termina buscador -->
+
+                      <div class="col-12">
+                        <router-outlet></router-outlet>
+                      </div>
+
+                      <app-modal></app-modal>
+                      
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- inicia el footer -->
+      <!--  <div class="container-fluid">
+            <app-footer></app-footer>
+          </div> -->
+    </div>
+  </div>
+</div>

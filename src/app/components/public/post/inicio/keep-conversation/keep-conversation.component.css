@@ -1,0 +1,68 @@
+.contenedor{
+    margin-bottom: 6rem;
+}
+
+.title{
+    margin-top: 4rem;
+    font-weight: 700;
+}
+
+.btn{
+    box-shadow: 0 1px 4px rgb(0 0 0 / 10%), 0 0 2px rgb(0 0 0 / 10%); 
+}
+
+.botones{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+button{
+   padding:  .75rem 1.5rem;
+    font-size: .875rem;
+   border-radius: 0.25rem;
+}
+
+.tweet{
+    color: #00acee;
+    font-weight: 500;
+}
+
+.facebook{
+    color: #3b5998;
+    font-weight: 500;
+}
+
+.linkedin{
+    color: #0072b1;
+    font-weight: 500;
+}
+
+.reddit{
+    color: #FF5700;
+    font-weight: 500;
+}
+
+.copy{
+    color: #000000;
+    font-weight: 500;
+}
+
+
+
+.icon-btn{
+    height: 20px;
+    
+}
+
+@media screen and (min-width: 75rem){
+    
+    .title{
+        font-size: calc(1.71098rem + 0.87648*(100vw - 36rem)/39);
+    }
+}
+
+@media screen and (min-width: 36rem){
+    .title{
+        font-size: 2.587464rem;
+    }
+}

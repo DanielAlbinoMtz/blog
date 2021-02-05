@@ -1,0 +1,52 @@
+.container{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+img{
+    width: 200px;
+    height: auto;
+}
+
+.imagen{
+    padding: 2rem;
+}
+
+
+.col{
+    text-align: center;
+}
+
+.card{
+    margin: 0 auto;
+    border-radius: 8px;
+    border: none;
+    -webkit-box-shadow: 2px 0px 54px 25px rgba(0,0,0,0.18);
+    -moz-box-shadow: 2px 0px 54px 25px rgba(0,0,0,0.18);
+    box-shadow: 2px 0px 54px 25px rgba(0,0,0,0.18);
+}
+
+form{
+    text-align: left;
+    padding: 1.5rem;
+}
+
+.boton{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+button{
+    width: 80%;
+    background: #24f;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.olvidaste{
+    text-align: center;
+    margin-top: 1.2rem;
+}

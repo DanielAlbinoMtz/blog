@@ -1,0 +1,71 @@
+a{
+    font-weight: 700;
+
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    
+}
+
+a:hover, a:focus {
+    background-size: 100% 2px;
+}
+
+.formulario{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h4{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #909099;
+    font-weight:400 ;
+}
+
+.btn{
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    font-weight:700;
+}
+
+
+@media screen and (min-width: 36rem){
+    a{
+        font-size: calc(1.29375rem + 0.19125*(100vw - 36rem)/39);
+    }
+}
+
+
+.redes{
+   
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.redes ul{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+.redes li
+{
+   list-style-type: none;
+   display: inline;
+   padding-right: 1rem;
+}
+.red{
+    text-decoration: none;
+}
+
+.redes li img{
+    width: 35px;
+    height: 35px;
+}

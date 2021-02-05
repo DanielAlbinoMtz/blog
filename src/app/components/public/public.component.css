@@ -1,0 +1,42 @@
+#componentes{
+    max-width: 72%;
+    justify-content: center;
+    margin-left: 3%;
+}
+
+@media(max-width:880px) {
+    #componentes{
+        max-width: 100%;
+        margin-left: 0%;
+    }
+}
+
+
+.tit-b{
+    
+    font-size: calc(1.71098rem + 0.87648*(100vw - 40rem)/50);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+    margin-top: -15rem;
+}
+
+.tit-b1{
+    
+    font-size: calc(1.71098rem + 0.87648*(100vw - 40rem)/50);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+    margin-top: 5rem;
+}
+
+#empezar{
+    margin-top: 17rem;
+    background: #24F;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+    
+   
+   
+    
+}

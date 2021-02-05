@@ -1,0 +1,106 @@
+.volver{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;    
+}
+.back{
+    text-align: start;
+    margin-left: 10%;
+}
+
+.backto{
+    color: black;
+    font-weight: 700;
+}
+
+
+.team{
+    text-align: center;
+}
+
+#principal{
+    margin-top: 4rem;
+    
+    padding: 0rem;
+    padding-bottom: 0;
+    text-align: center;
+    
+}
+
+.tarjeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombre-autor{
+    margin: 0 auto;
+}
+
+.nombre2{
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -.03em;
+    margin-bottom: 2rem;
+}
+
+.descripcion{
+    font-size: 1.125rem;
+    font-family: 400;
+    padding: 1rem;
+
+}
+
+
+.card{
+    text-align: center;
+    border-radius: .5rem;
+    margin-bottom: 3rem;  
+    margin-right: 1.5rem;
+    border: none;
+    background: #24f;
+    padding-top: 3rem;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+li{
+    list-style-type: none;
+   display: inline;
+   padding-right: 5px;
+}
+
+.redes{
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (min-width: 75rem){
+    
+
+    .nombre2{
+        font-size: calc(2.26278rem + 2.24562*(100vw - 36rem)/39);
+    }
+
+       
+}
+
+@media screen and (min-width: 36rem){
+    .nombre2{
+        
+        font-size: 3.5rem;
+    }   
+}
+

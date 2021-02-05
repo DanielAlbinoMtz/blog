@@ -1,0 +1,41 @@
+.search{
+    margin-bottom: 30px; 
+    
+   
+}
+
+
+
+/* input{
+    height: auto;
+    width: 90%;
+    border: none;
+}
+
+input:hover{
+    
+    border: none;
+}
+ */
+#box{
+    background: #ffffff;
+    height: 45px;
+    font-display: flex;
+    align-items: center;
+    border: solid 1px #cccccc;
+    
+    
+}
+
+#box > input{
+    flex: 1;
+    height: auto;
+    border: none;
+}
+
+img{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 22px;
+    height: 22px;
+}

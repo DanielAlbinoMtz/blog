@@ -1,0 +1,33 @@
+
+<div id="wrapper" style="padding-bottom: 6rem;">
+    <div class="row">
+
+      <div class="boton-oculto col-12">
+        <app-mininav></app-mininav>
+      </div> 
+      
+
+      <div class="col col-xs-0 col-sm-0 col-md-0 col-lg-2 col-xl-2 bg-danger">
+        <app-sidenav style="text-align: start;"></app-sidenav>
+      </div>
+      <!-- <div class="col-8">
+            <router-outlet></router-outlet>
+        </div>   -->
+  
+      <div id="componentes" class="col-lg-12 col-md-12 col-sm-12">
+        <!-- es la pagina principal de blog -->
+        <div class="row">
+         <div class="contenedor">
+             <router-outlet></router-outlet>
+         </div>
+         <app-modal></app-modal>
+        </div>
+  
+        <!-- inicia el footer -->
+        <!--  <div class="container-fluid">
+              <app-footer></app-footer>
+            </div> -->
+      </div>
+    </div>
+  </div>
+  

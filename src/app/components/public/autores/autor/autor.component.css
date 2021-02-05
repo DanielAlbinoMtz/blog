@@ -1,0 +1,114 @@
+.team{
+    text-align: center;
+}
+
+.header{
+    margin-bottom: 6rem;
+    margin-top: 8rem;
+}
+
+.title{
+    
+    margin-bottom: 2rem;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -.035em;
+}
+
+.title1{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -.035em;
+}
+
+.tarjetas{
+    max-width: 80%;
+    margin: 0px auto;
+}
+
+.perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.perfil2{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.card{
+    text-align: center;
+    padding: 3rem 3rem 2rem;
+    border-radius: .5rem;
+    margin-bottom: 3rem;  
+    margin-right: 1.5rem;
+    border: none;
+
+}
+
+.card:hover img{
+    
+    overflow: hidden;
+    transform: scale(1.1); 
+}
+
+.card:hover{
+    box-shadow: 3px 23px 57px 16px rgba(0,0,0,0.2);
+}
+
+.imagen{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.imagen img{
+    margin: 0px auto;
+    transition: 0.3s all ease-in-out; 
+}
+
+.imagen2{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.imagen2 img{
+    margin: 0px auto;
+    transition: 0.3s all ease-in-out; 
+}
+
+.tarjet{
+    text-align: center;
+}
+
+.card-deck{
+    margin: 0px;
+}
+
+
+/* img:hover { 
+    transform: scale(1.1); 
+}  */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 75rem){
+    .title{
+        
+    font-size: calc(1.5rem + 1.44782*(100vw - 36rem)/39);
+
+    }
+}
+
