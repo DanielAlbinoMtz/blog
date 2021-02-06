@@ -109,6 +109,10 @@ img{
 .suscribe{
     padding: 3rem;
 }
+
+.text{
+    margin-top: 3rem;
+}
 }
 
 @media screen and (min-width: 36rem){
@@ -118,6 +122,9 @@ img{
 .description-category{
     font-size: calc(1.29375rem + 0.19125*(100vw - 36rem)/39);
 }
+
+
+
 }
 
 #box{
