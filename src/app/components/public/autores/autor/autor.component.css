@@ -106,8 +106,9 @@ a{
 
 @media screen and (min-width: 75rem){
     .title{
+        font-size: calc(.15rem + 2.8236rem);
         
-    font-size: calc(1.5rem + 1.44782*(100vw - 36rem)/39);
+   /*  font-size: calc(1.5rem + 1.44782*(100vw - 36rem)/39); */
 
     }
 }

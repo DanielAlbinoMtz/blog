@@ -74,17 +74,28 @@
     border-radius: 8px;
     transform-origin: 0 0;
     transition: transform .25s, visibility .25s ease-in;
+    overflow: hidden;/*se debe poner hidden en la tarjeta para que la imagen no se sobresalga*/
 }
 
 .card-img{
     border-radius: 8px;
     border: none;
 }
-
+/*Aqui inicia el zoom de las tarjetas*/
 .card:hover{
     box-shadow: 3px 23px 57px 16px rgba(0,0,0,0.2);
-    /*zoom a imagen*/
-    transform: scale(1.01);
+   
+}
+
+.card:hover .card-img{
+    
+    overflow: hidden;
+    transform: scale(1.1); 
+}
+
+.imagen img{
+   
+    transition: 0.5s all ease-in-out; 
 }
 
 .sobreponer{

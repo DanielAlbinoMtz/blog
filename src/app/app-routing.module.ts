@@ -29,7 +29,11 @@ loadChildren:() => import('./components/public/post/post.module').then(m=> m.Pos
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{
+    scrollPositionRestoration: 'enabled',
+    onSameUrlNavigation:'reload',
+    initialNavigation:'enabled'
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

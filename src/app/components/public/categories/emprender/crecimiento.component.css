@@ -69,6 +69,7 @@ p{
     border-radius: 8px;
     transform-origin: 0 0;
     transition: transform .25s, visibility .25s ease-in;
+    overflow: hidden;
 }
 
 .card-img{
@@ -79,8 +80,22 @@ p{
 .card:hover{
     box-shadow: 3px 23px 57px 16px rgba(0,0,0,0.2);
     /*zoom a imagen*/
-    transform: scale(1.01);
+    /* transform: scale(1.01); */
 }
+
+
+.card:hover .card-img{
+    
+    overflow: hidden;
+    transform: scale(1.1); 
+}
+
+.imagen img{
+   
+    transition: 0.5s all ease-in-out; 
+}
+
+
 
 @media screen and (min-width: 75rem){
 .titulo{

@@ -182,6 +182,10 @@ button:hover #Capa_1{
   
 }
 
+#cuenta:hover{
+    background: #4178ee;
+}
+
 #sus{
     border-radius: 1rem;
 }

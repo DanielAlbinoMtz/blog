@@ -39,20 +39,34 @@
      
      transform-origin: 0 0;
      transition: transform .25s, visibility .25s ease-in;
+     overflow: hidden;
  }
  
  .card:hover{
      box-shadow: 3px 23px 57px 16px rgba(0,0,0,0.2);
      /*zoom a imagen*/
-     transform: scale(1.01);
+     /* transform: scale(1.01); */
  }
 
  
+.card:hover .card-img{   
+    
+    transform: scale(1.1); 
+}
 
-
-  a{
+img{
+   
+    transition: 0.3s all ease-in-out; 
+}
+a{
      
       color: black;
   }
 
   
+.imagen .img{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    
+}
