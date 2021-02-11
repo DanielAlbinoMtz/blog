@@ -1,5 +1,6 @@
 .tarjeta{
     margin-bottom: 3rem;
+   
 }
 
 
@@ -18,11 +19,12 @@
 
  .card{
      border-radius: 8px;
-     min-height: 384px;/*aqui dejalo en min si no se descagala la tarjeta*/
+     min-height: 400px;/*aqui dejalo en min si no se descagala la tarjeta*/
      border: none;   
      box-shadow: 0 2px 2px rgba(0,0,0,0);      
      transform-origin: 0 0;
      transition: transform .25s, visibility .25s ease-in;
+     overflow: hidden;
     
  }
 
@@ -31,14 +33,19 @@
  .card:hover{
      box-shadow: 3px 23px 57px 16px rgba(0,0,0,0.2);
      /*zoom a imagen*/
-     transform: scale(1.01);
+    /*  transform: scale(1.01); */
      
  } 
 
+ .card:hover .img-fluid{   
+    
+    transform: scale(1.1); 
+}
+
  .imagen{
-     height: 384px;
-     width: auto;
-     
+     height: 400px;
+     width: auto; 
+     overflow: hidden;  
 
  }
 
@@ -48,6 +55,7 @@
     background-repeat: no-repeat;
     border-top-left-radius: 8px;    
     border-bottom-left-radius:8px ;
+    transition: 0.3s all ease-in-out; 
 }
 
 /*Esto es para que no se distorcione la imagen*/

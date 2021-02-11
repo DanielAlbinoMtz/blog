@@ -2,10 +2,11 @@
 body{
     background: #f6f6f7;
     margin-left: 1rem;
+    color: #1b1b20;
 }
 
 
 ::selection{
-    background: #ffd000;
-    color: #1b1b20;
+    background: #004fff;
+    color: #fff;
 }

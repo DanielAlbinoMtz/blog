@@ -1,3 +1,52 @@
-nav{
-    padding-top: 3rem;
+.container{
+    margin-top: 6rem;
 }
+
+
+  ul.pagination {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+
+  }
+  
+  ul.pagination li {display: inline;}
+  
+  ul.pagination li a {
+      color: black;
+      float: left;
+      padding: 6px 12px;
+      text-decoration: none;
+      margin-left: 5px;
+     
+  }
+  
+  ul.pagination li a.active {
+      background-color: #004fff;
+      color: white;
+      border-radius: 0.225rem;
+  }
+  
+  ul.pagination li a:hover:not(.active) {
+      background-color: #ddd;
+    }
+
+    img{
+        height: 15px;
+
+    }
+
+    .inicio{
+        margin-left: 10px;
+        margin-right: 25px;
+    }
+
+    .final{
+        margin-right: 10px;
+        margin-left: 35px;
+    }
+
+    .rotar{
+        transform: rotate(180deg);
+    }
+ 

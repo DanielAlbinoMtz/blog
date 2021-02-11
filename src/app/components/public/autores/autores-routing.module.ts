@@ -10,7 +10,7 @@ const routes: Routes = [
     path: '', component:AutoresComponent,
     children: [
       { path: '', component: AutorComponent},
-     { path: 'autor/nombre', component: AutorDetailsComponent}
+     {path: 'autor/nombre', component: AutorDetailsComponent}
     ]
   }
 ];
