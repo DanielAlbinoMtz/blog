@@ -19,8 +19,7 @@
 
  .card{
      border-radius: 8px;
-     min-height: 380px;/*aqui dejalo en min si no se descagala la tarjeta*/
-    
+     min-height: 380px;/*aqui dejalo en min si no se descompone la tarjeta*/
      border: none;   
      box-shadow: 0 2px 2px rgba(0,0,0,0);      
      transform-origin: 0 0;

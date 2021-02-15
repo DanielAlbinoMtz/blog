@@ -11,13 +11,20 @@ import { CardPostMiniComponent } from './autores-post/card-post-mini/card-post-m
 import { CardPostComponent } from './autores-post/card-post/card-post.component';
 import { AutoresPostComponent } from './autores-post/autores-post.component';
 import { AutorComponent } from './autor/autor.component';
+
 import { TeamComponent } from './autor/team/team.component';
+
+
 
 
 
 @NgModule({
   declarations: [ AutorDetailsComponent, AutoresAboutComponent, AutoresPostComponent,
+
     AutorComponent, CardPostMiniComponent, CardPostComponent, TeamComponent, /* AutoresPostComponent */],
+
+    
+
   imports: [
     CommonModule,
     AutoresRoutingModule,
