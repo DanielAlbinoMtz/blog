@@ -23,21 +23,14 @@
 #principal{
     margin-bottom: 4rem;
 }
-.principal, .img-principal{
-   
-   /*  background-image: url('https://lh3.googleusercontent.com/pXMNJMBO3ONO3C8CHhq9hl5NXGhzli8TobpH2EdWR9bGd-CMGPhxSfZh9_wOLalC7ZtrOJDIOikE5-hEPCs42RN7=w640-h400-e365-rj-sc0x00ffffff');
-     */
-    height: 390px;
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    
-}
+
 
 .principal, img{
    
     /*  background-image: url('https://lh3.googleusercontent.com/pXMNJMBO3ONO3C8CHhq9hl5NXGhzli8TobpH2EdWR9bGd-CMGPhxSfZh9_wOLalC7ZtrOJDIOikE5-hEPCs42RN7=w640-h400-e365-rj-sc0x00ffffff');
       */
-     height: 400px;
+     max-height: 400px;
+     
      background-repeat: no-repeat;
      
  }
@@ -59,14 +52,10 @@
     letter-spacing: -.03em;
     font-size: calc(1em + 1.5vw)!important;
     font-weight: bold;
+    margin-top: 1rem;
 }
 
-.card-title1{
-    line-height: 1.2;
-    letter-spacing: -.03em;
-    font-size: calc(0.8em + 1vw)!important;
-    font-weight: bold;
-}
+
 
 .card{
     border: none;   
@@ -80,6 +69,7 @@
 .card-img{
     border-radius: 8px;
     border: none;
+    object-fit: cover;
 }
 /*Aqui inicia el zoom de las tarjetas*/
 .card:hover{
@@ -93,24 +83,27 @@
     transform: scale(1.1); 
 }
 
+
 .imagen img{
    
     transition: 0.5s all ease-in-out; 
 }
 
 .sobreponer{
-    position: relative;
+    position: absolute;
+    padding-right: 2rem;
+    
 }
 
 .sobre{
     padding-left: 0.225rem;
     padding-right: 0.225rem;
     padding-bottom: 0;
-    padding-top: 0;
-    position: absolute;
+    padding-top:0px;
+    position: relative;
     margin-bottom: 1rem;
     
-    bottom: 110px;
+    bottom: 0px;
     border: none;
     background: #f6f6f7;
     font-size: 0.8rem;
@@ -118,13 +111,47 @@
 .clock{
     width: 24px;
     height: 24px;
-    margin-left:25px ;
+   
 }
 
-@media(max-width:459px){
+.justify-content-en {
+    justify-content: flex-end!important;
+}
+
+@media(max-width:600px){
 
     #element-over{
         padding: 1rem 2rem;
     }
-   
+   .sobre{
+       bottom: 0;
+       position: relative;
+   }
+
+   .card , .card-img{
+    min-height: 330px;
+   }
+
+   .perfil{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 0.250rem;
+}
+   .clock{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.card-title{
+    font-size: calc(1.5em + 1vw)!important;
+    font-weight: 700;
+}
+
+.sobreponer{
+    padding-bottom: 2rem;
+}
+
+
 }

@@ -45,6 +45,7 @@
 }
 
 .title{
+    font-size: 1.71098438rem;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -.03em;
@@ -101,18 +102,21 @@ li:hover{
 
 @media screen and (min-width: 75rem){
     .title{
-        
-        font-size: calc(1.71098rem + 0.87648*(100vw - 36rem)/39);
-   
-    }
-    
-    
-    }
-    
-    @media screen and (min-width: 36rem){
-    .title{
-        font-size:  2.587464rem;
+        font-size:  calc(.90193rem + 2.24738vw);
          }
+
+    
+    
+    }
+    
+    @media screen and (min-width: 1200px){
+   
+         .title{
+        
+            font-size: 2.587464rem;
+            /* font-size: calc(.90193rem + 2.24738vw); */
+       
+        }
     
     }
 

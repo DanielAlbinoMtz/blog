@@ -2,9 +2,6 @@
     margin-bottom: 3rem;
    
 }
-
-
- 
  .card-title{
      line-height: 1.2;
      letter-spacing: -.02em;     
@@ -119,5 +116,23 @@ p{
     }
     
     }
+
+    
+    @media(max-width:600px){
+        .imagen{
+            height: auto;
+        }
+
+                
+        .imagen img{
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            border-top-left-radius: 8px;    
+            border-bottom-left-radius:0px ;
+            transition: 0.3s all ease-in-out; 
+        }
+    }
+
 
 

@@ -128,7 +128,18 @@ input[type="text"]:focus{
     
     }  
 
+    @media (max-width: 1100px){
+    
 
+        input{
+            width: 100%;
+        }
+
+        .btn{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
 
 
 @media screen and (min-width: 75rem){

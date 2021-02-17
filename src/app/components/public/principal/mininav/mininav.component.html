@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light ">
     <a class="navbar-brand" routerLink="/blog"> <img src="assets/Axin_logo_negro.png" width="100" height="auto" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,20 +8,21 @@
         <a class="nav-link active" routerLink="/finanzas">Finanzas</a>
         <a class="nav-link active" routerLink="/inversion">Inversión</a>
         <a class="nav-link active" routerLink="/emprender">Emprender</a>        
-        <a class="nav-link active" routerLink="/finanzas">Mercados</a>
-        <a class="nav-link active" routerLink="/inversion">Cripto</a>
+        <a class="nav-link active" [routerLink]="['/mercados']">Mercados</a>
+        <a class="nav-link active" routerLink="/cripto">Cripto</a>
         
         <div class="formulario">
-          <form>
+          <form class="form">
+            <h4 class="mb-4">Únete a la comunidad</h4>
             <div class="form-group">
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email">
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Correo electrónico">
               </div>           
            
-            <button type="submit" class="btn">Subscribe</button>
+            <button type="submit" class="btn">Suscríbete</button>
           </form>
         </div>
 
-        <div class="redes">
+        <!-- <div class="redes">
           <div class="title">
             <h4>Follow us</h4>
 
@@ -36,7 +37,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> -->
         
 
       </div>

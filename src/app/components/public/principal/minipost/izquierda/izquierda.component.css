@@ -70,3 +70,15 @@ a{
     background-repeat: no-repeat;
     
 }
+
+@media(max-width:600px){
+    .card-title1{
+        font-size: calc(1.4em + 1vw)!important;
+        font-weight: 700;
+    }
+
+    .card-img-overlay{
+        padding-bottom: 3rem;
+    }
+
+}
