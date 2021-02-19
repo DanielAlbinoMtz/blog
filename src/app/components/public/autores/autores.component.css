@@ -1,3 +1,12 @@
+#wrapper{
+    padding-bottom: 6rem;
+   /*  width: 120%; */
+    /* overflow-x: hidden; */
+    /* align-items: center; */
+    margin-right: 1.5rem;
+}
+
+
 #componentes{
     max-width: 90%;
     justify-content: center;
@@ -13,7 +22,17 @@
     text-align: center;
 }
 
-@media(max-width:880px) {
+@media(max-width:600px) {
+
+    #wrapper{
+        padding-bottom: 6rem;
+       /*  width: 120%; */
+        overflow-x: hidden;
+        /* align-items: center; */
+        /* margin-right: 1.5rem; */
+    }
+
+
     #componentes{
         max-width: 100%;
         margin-left: 0%;

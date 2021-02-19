@@ -1,6 +1,6 @@
 <div id="bottom" class="row mt-5">
 
-<div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<div id="uno" class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 <div class="card mb-3">
     <div class="sobreponer">
         <img src="https://res.cloudinary.com/dn1j6dpd7/image/fetch/f_auto,q_auto,w_564,h_204,c_fill/https://success-cms.labs.livechatinc.com/app/uploads/2020/12/LiveChat-Legal-Segment-Customers-and-Offer-Legal-Support.png" class="card-img-top" alt="...">
@@ -24,7 +24,7 @@
     </div>
 </div>
 </div>
-<div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<div id="dos" class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
     <div class="card mb-3">
         <div class="sobreponer">
             <img src="https://res.cloudinary.com/dn1j6dpd7/image/fetch/f_auto,q_auto,w_564,h_204,c_fill/https://success-cms.labs.livechatinc.com/app/uploads/2020/10/Privacy-policy-generating-explained.jpg" class="card-img-top" alt="...">
@@ -48,3 +48,18 @@
     </div>
  
 </div>
+
+<script type="text/javascript">
+    $(window).resize(function() {
+        actualizar_altura_foto();
+      });
+      
+      function actualizar_altura_foto(){
+        $('#uno').height(0);
+        let altura = $('#dos').height();
+        $('#uno').height(altura);
+      }
+
+      setTimeout(function() {actualizar_altura_foto()}, 1000)
+
+</script>

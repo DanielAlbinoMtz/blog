@@ -16,7 +16,9 @@
 
 
 .team{
+    margin-top: -3rem;
     text-align: center;
+    padding-top: 3rem;
 }
 
 #principal{
@@ -60,12 +62,13 @@
     margin-right: 1.5rem;
     border: none;
    /*  background: #24f; */
-    padding-top: 3rem;
+   /*  padding-top: 3rem; */
     /* background: #004fff; */
     margin: 0 auto;
-    max-width: 90rem;
+    /* max-width: 90rem; */
     padding-bottom: 1rem;
     overflow: hidden;
+   
 }
 
 .perfil{
@@ -167,3 +170,6 @@ li{
     }
 }
  */
+
+
+ 

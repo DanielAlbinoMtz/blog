@@ -11,17 +11,19 @@
         max-width: 100%;
         margin-left: 3%;
     }
+    #wrapper{
+        overflow: hidden;
+    }
 }
 
 
 @media (min-width: 859px) {
     .boton-oculto {
         display: none;
-        
-        
     }
+
+    
   }
 .boton-oculto{
     margin-left: 0px;
-    
   }
