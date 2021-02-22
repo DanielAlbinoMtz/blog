@@ -10,16 +10,18 @@
      letter-spacing: -.02em;     
      font-weight: 700;
      margin-bottom: 1rem;
+     margin-right: 1rem;
  }
 
  .card-text{
     font-size: 1.125rem;
     color: black;
+    margin-right: 1.5rem;
  }
 
  .card{
      border-radius: 8px;
-     min-height: 400px;/*aqui dejalo en min si no se descagala la tarjeta*/
+     /* min-height: 400px; *//*aqui dejalo en min si no se descagala la tarjeta*/
      border: none;   
      box-shadow: 0 2px 2px rgba(0,0,0,0);      
      transform-origin: 0 0;
@@ -43,10 +45,9 @@
 }
 
  .imagen{
-     height: 400px;
+     height: 100%;
      width: auto; 
      overflow: hidden;  
-
  }
 
  .imagen img{
@@ -69,7 +70,11 @@
 }
 
 .texto{
-    padding: 3rem;
+    /* padding: 3rem; */
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
     
 }
 
@@ -77,21 +82,17 @@
     /* position: absolute;
     bottom: 0; */
    /*  position: relative; */
-    bottom: -4rem;
+    bottom: -3rem;
 }
 
-@media(max-width:1499px) and (min-width:1300px){
+@media(max-width:1499px){
     .imagenes{
         /* position: absolute;
         bottom: 0; */
         position: relative;
-       /*  bottom: 1rem; */
+        bottom: -.5rem;
     }
 }
-
-/* @media(max-width:1300px){
-
-} */
 
 span{
     font-weight: bold;
@@ -108,7 +109,8 @@ span{
     width: 24px;
     height: 24px;
 
-    
+    /* margin-right: 0.125rem;
+    margin-left: 1rem; */
 }
 
 .perfil{
@@ -139,13 +141,14 @@ span{
             height: auto;
         }
 
-                
-        .imagen img{
-            height: 100%;
-            width: 100%;
-            background-repeat: no-repeat;
-            border-top-left-radius: 8px;    
-            border-bottom-left-radius:0px ;
-            transition: 0.3s all ease-in-out; 
-        }
+        
+ .imagen img{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 8px;    
+    border-bottom-left-radius:0px ;
+    transition: 0.3s all ease-in-out; 
+}
     }
+

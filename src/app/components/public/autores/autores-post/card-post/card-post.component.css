@@ -2,21 +2,26 @@
     margin-bottom: 3rem;
    
 }
+
+
+ 
  .card-title{
      line-height: 1.2;
      letter-spacing: -.02em;     
      font-weight: 700;
      margin-bottom: 1rem;
+     margin-right: 1rem;
  }
 
  .card-text{
     font-size: 1.125rem;
     color: black;
+    margin-right: 1.5rem;
  }
 
  .card{
      border-radius: 8px;
-     min-height: 380px;/*aqui dejalo en min si no se descompone la tarjeta*/
+     /* min-height: 400px; *//*aqui dejalo en min si no se descagala la tarjeta*/
      border: none;   
      box-shadow: 0 2px 2px rgba(0,0,0,0);      
      transform-origin: 0 0;
@@ -40,10 +45,9 @@
 }
 
  .imagen{
-     height: 400px;
+     height: 100%;
      width: auto; 
      overflow: hidden;  
-
  }
 
  .imagen img{
@@ -66,13 +70,28 @@
 }
 
 .texto{
-    padding: 3rem;
+    /* padding: 3rem; */
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
     
 }
 
 .imagenes{
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
+   /*  position: relative; */
+    bottom: -3rem;
+}
+
+@media(max-width:1499px){
+    .imagenes{
+        /* position: absolute;
+        bottom: 0; */
+        position: relative;
+        bottom: -.5rem;
+    }
 }
 
 span{
@@ -90,8 +109,8 @@ span{
     width: 24px;
     height: 24px;
 
-    margin-right: 0.125rem;
-    margin-left: 1rem;
+    /* margin-right: 0.125rem;
+    margin-left: 1rem; */
 }
 
 .perfil{
@@ -101,7 +120,7 @@ span{
     margin-right: .225rem;
 }
 
-p{
+.name{
     font-weight: 400;
     font-size: 0.875rem;
     color: #909099;
@@ -117,22 +136,19 @@ p{
     
     }
 
-    
     @media(max-width:600px){
         .imagen{
             height: auto;
         }
 
-                
-        .imagen img{
-            height: 100%;
-            width: 100%;
-            background-repeat: no-repeat;
-            border-top-left-radius: 8px;    
-            border-bottom-left-radius:0px ;
-            transition: 0.3s all ease-in-out; 
-        }
+        
+ .imagen img{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 8px;    
+    border-bottom-left-radius:0px ;
+    transition: 0.3s all ease-in-out; 
+}
     }
-
-
 

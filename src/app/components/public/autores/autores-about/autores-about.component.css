@@ -143,6 +143,12 @@
     align-items: center;
 }
 
+@media(max-width: 859px){
+    .tarjeta{
+        margin-left: 2rem;
+    }
+}
+
 .nombre-autor{
     margin: 0 auto;
 }

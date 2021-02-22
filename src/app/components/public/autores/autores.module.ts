@@ -13,6 +13,12 @@ import { AutoresPostComponent } from './autores-post/autores-post.component';
 import { AutorComponent } from './autor/autor.component';
 
 import { TeamComponent } from './autor/team/team.component';
+import { AllAutorsComponent } from './all-autors/all-autors.component';
+import { MariaComponent } from './all-autors/maria/maria.component';
+import { JudithComponent } from './all-autors/judith/judith.component';
+import { JoseComponent } from './all-autors/jose/jose.component';
+import { JennyComponent } from './all-autors/jenny/jenny.component';
+import { MarioComponent } from './all-autors/mario/mario.component';
 
 
 
@@ -21,7 +27,7 @@ import { TeamComponent } from './autor/team/team.component';
 @NgModule({
   declarations: [ AutorDetailsComponent, AutoresAboutComponent, AutoresPostComponent,
 
-    AutorComponent, CardPostMiniComponent, CardPostComponent, TeamComponent, /* AutoresPostComponent */],
+    AutorComponent, CardPostMiniComponent, CardPostComponent, TeamComponent, AllAutorsComponent, MariaComponent, JudithComponent, JoseComponent, JennyComponent, MarioComponent, /* AutoresPostComponent */],
 
     
 

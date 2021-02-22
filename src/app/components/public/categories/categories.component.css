@@ -32,3 +32,10 @@
     margin-left: 0px;
     
   }
+
+
+ @media(max-width:859px) {
+    #categories{
+        margin-top: 5rem;
+    }
+ }

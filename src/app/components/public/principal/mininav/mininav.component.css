@@ -1,6 +1,24 @@
 nav{
     background: #ffffff;
+    text-align: center;
 }
+.botones{
+    float: right;
+}
+button{
+    margin-left: 5px;
+}
+
+#demo > input{
+    flex: 1;
+    height: 100%;
+    
+    border: none;
+    border-radius: 0.225rem; 
+}
+/* .navbar{
+    /* justify-content: start; 
+} */
 
 #navbarNavAltMarkup{
     min-height: 900px;

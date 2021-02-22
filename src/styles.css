@@ -15,3 +15,11 @@ app-root{
     background: #004fff;
     color: #fff;
 }
+
+
+@media (max-width: 859px) {
+    app-search {
+         display: none;      
+    }
+  }
+  
