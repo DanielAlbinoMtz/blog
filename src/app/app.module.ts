@@ -33,9 +33,8 @@ import { PostComponent } from './components/public/post/post.component';
 import { PostRoutingModule } from './components/public/post/post-routing.module';
 import { RelatedArticleComponent } from './components/public/related-article/related-article.component';
 import { ArticlesTrendComponent } from './components/public/principal/minipost/trend/articles-trend/articles-trend.component';
-/* import { CardPostComponent } from './components/public/autores/autores-post/card-post/card-post.component';
-import { CardPostMiniComponent } from './components/public/autores/autores-post/card-post-mini/card-post-mini.component';
- */
+/*evitar los errores de recarga */
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -83,7 +82,7 @@ import { CardPostMiniComponent } from './components/public/autores/autores-post/
     
 
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

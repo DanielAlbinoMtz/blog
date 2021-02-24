@@ -19,15 +19,15 @@ import { JudithComponent } from './all-autors/judith/judith.component';
 import { JoseComponent } from './all-autors/jose/jose.component';
 import { JennyComponent } from './all-autors/jenny/jenny.component';
 import { MarioComponent } from './all-autors/mario/mario.component';
-
-
+import { AndreaNComponent } from './all-autors/andrea-n/andrea-n.component';
+import { AndreaQComponent } from './all-autors/andrea-q/andrea-q.component';
 
 
 
 @NgModule({
   declarations: [ AutorDetailsComponent, AutoresAboutComponent, AutoresPostComponent,
 
-    AutorComponent, CardPostMiniComponent, CardPostComponent, TeamComponent, AllAutorsComponent, MariaComponent, JudithComponent, JoseComponent, JennyComponent, MarioComponent, /* AutoresPostComponent */],
+    AutorComponent, CardPostMiniComponent, CardPostComponent, TeamComponent, AllAutorsComponent, MariaComponent, JudithComponent, JoseComponent, JennyComponent, MarioComponent, AndreaNComponent, AndreaQComponent, /* AutoresPostComponent */],
 
     
 

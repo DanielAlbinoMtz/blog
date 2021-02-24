@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AllAutorsComponent } from './all-autors/all-autors.component';
+import { AndreaNComponent } from './all-autors/andrea-n/andrea-n.component';
+import { AndreaQComponent } from './all-autors/andrea-q/andrea-q.component';
 import { JennyComponent } from './all-autors/jenny/jenny.component';
 import { JoseComponent } from './all-autors/jose/jose.component';
 import { JudithComponent } from './all-autors/judith/judith.component';
@@ -21,7 +23,9 @@ const routes: Routes = [
       { path: 'autor/mario', component: MarioComponent},
       { path: 'autor/judith', component: JudithComponent},
       { path: 'autor/jose', component: JoseComponent},
-      { path: 'autor/jenny', component:JennyComponent}
+      { path: 'autor/jenny', component:JennyComponent},
+      { path: 'colaborador/andreanunez', component:AndreaNComponent},
+      { path: 'colaborador/andreaquirasco', component:AndreaQComponent},
 
     ]
   }

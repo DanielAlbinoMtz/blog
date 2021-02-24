@@ -241,9 +241,3 @@ li{
     padding-bottom: 0;
     text-align: center;    
 }
-
-@media (max-width: 859px){
-.tarjeta {
-    margin-left: 2rem;
-}
-}
