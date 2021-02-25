@@ -17,17 +17,32 @@ import { AllAutorsComponent } from './all-autors/all-autors.component';
 import { MariaComponent } from './all-autors/maria/maria.component';
 import { JudithComponent } from './all-autors/judith/judith.component';
 import { JoseComponent } from './all-autors/jose/jose.component';
-import { JennyComponent } from './all-autors/jenny/jenny.component';
+
 import { MarioComponent } from './all-autors/mario/mario.component';
 import { AndreaNComponent } from './all-autors/andrea-n/andrea-n.component';
 import { AndreaQComponent } from './all-autors/andrea-q/andrea-q.component';
+import { GustavoComponent } from './all-autors/gustavo/gustavo.component';
+import { AnetteComponent } from './all-autors/anette/anette.component';
+import { JeannetteComponent } from './all-autors/jeannette/jeannette.component';
 
 
 
 @NgModule({
-  declarations: [ AutorDetailsComponent, AutoresAboutComponent, AutoresPostComponent,
-
-    AutorComponent, CardPostMiniComponent, CardPostComponent, TeamComponent, AllAutorsComponent, MariaComponent, JudithComponent, JoseComponent, JennyComponent, MarioComponent, AndreaNComponent, AndreaQComponent, /* AutoresPostComponent */],
+  declarations: [ 
+    AutorDetailsComponent, 
+    AutoresAboutComponent,
+    AutoresPostComponent,
+    AutorComponent, 
+    CardPostMiniComponent,
+    CardPostComponent,
+    TeamComponent, 
+    AllAutorsComponent, 
+    MariaComponent, 
+    JudithComponent, 
+    JoseComponent, 
+    MarioComponent, 
+    AndreaNComponent, 
+    AndreaQComponent, GustavoComponent, AnetteComponent, JeannetteComponent, /* AutoresPostComponent */],
 
     
 
