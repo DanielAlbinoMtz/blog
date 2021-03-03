@@ -10,6 +10,7 @@ import { JoseComponent } from './all-autors/jose/jose.component';
 import { JudithComponent } from './all-autors/judith/judith.component';
 import { MariaComponent } from './all-autors/maria/maria.component';
 import { MarioComponent } from './all-autors/mario/mario.component';
+import { RodrigoComponent } from './all-autors/rodrigo/rodrigo.component';
 import { AutorDetailsComponent } from './autor-details/autor-details.component';
 import { AutorComponent } from './autor/autor.component';
 import { AutoresComponent } from './autores.component';
@@ -27,11 +28,13 @@ const routes: Routes = [
       { path: 'autor/judith', component: JudithComponent},
       { path: 'autor/jose', component: JoseComponent},
       { path: 'autor/jeannette', component: JeannetteComponent},
-      { path: 'autor/gustavo', component: GustavoComponent},
       { path: 'autor/anette', component: AnetteComponent},
+      { path: 'autor/rodrigo', component: RodrigoComponent},
       /*rutas estaticas de colaboradores */
       { path: 'colaborador/andreanunez', component:AndreaNComponent},
       { path: 'colaborador/andreaquirasco', component:AndreaQComponent},
+      { path: 'colaborador/gustavo', component: GustavoComponent},
+      
 
     ]
   }

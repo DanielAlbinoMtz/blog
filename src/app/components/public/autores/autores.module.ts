@@ -24,6 +24,7 @@ import { AndreaQComponent } from './all-autors/andrea-q/andrea-q.component';
 import { GustavoComponent } from './all-autors/gustavo/gustavo.component';
 import { AnetteComponent } from './all-autors/anette/anette.component';
 import { JeannetteComponent } from './all-autors/jeannette/jeannette.component';
+import { RodrigoComponent } from './all-autors/rodrigo/rodrigo.component';
 
 
 
@@ -42,7 +43,7 @@ import { JeannetteComponent } from './all-autors/jeannette/jeannette.component';
     JoseComponent, 
     MarioComponent, 
     AndreaNComponent, 
-    AndreaQComponent, GustavoComponent, AnetteComponent, JeannetteComponent, /* AutoresPostComponent */],
+    AndreaQComponent, GustavoComponent, AnetteComponent, JeannetteComponent, RodrigoComponent, /* AutoresPostComponent */],
 
     
 
