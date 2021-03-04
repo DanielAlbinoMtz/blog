@@ -22,7 +22,7 @@
 
 @media(max-width:880px) {
     .contenido{
-        max-width: 100%;
+        max-width: 90%;
         margin-left: 0%;
     }
 }

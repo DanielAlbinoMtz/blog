@@ -98,6 +98,7 @@ li:hover{
     font-size: 1.125rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
+    white-space: pre-line;
 }
 
 @media screen and (min-width: 75rem){
@@ -125,9 +126,10 @@ li:hover{
             display: none;
         }
     }
-@media (max-width: 500px){
-    .container{
-        padding-left: 0;
-        padding-right:5px;
+
+    @media (max-width: 500px){
+        .container{
+            padding-left: 0;
+            padding-right:5px;
+        }
     }
-}

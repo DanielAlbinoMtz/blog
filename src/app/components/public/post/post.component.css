@@ -27,3 +27,14 @@
 .boton-oculto{
     margin-left: 0px;
   }
+
+.container{
+   
+    padding-left: 0;
+}
+
+@media(max-width: 500px){
+    #wrapper{
+    margin-left: -15px;
+    }
+}

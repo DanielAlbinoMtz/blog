@@ -7,6 +7,7 @@
 }
 
 
+
 #componentes{
     max-width: 90%;
     justify-content: center;
@@ -29,7 +30,8 @@
        /*  width: 120%; */
         overflow-x: hidden;
         /* align-items: center; */
-        /* margin-right: 1.5rem; */
+        margin-right: 0;
+        margin-left: -15px;
     }
 
 
