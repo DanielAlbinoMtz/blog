@@ -37,17 +37,38 @@ baseURL = 'http://amaliath3code.com/api/' ;
     )
   }
 
+  getCategoriaFinanzas(){//traer grupo de articulos relacionados a la categoria finanzas
+    return this._http.get(this.baseURL+'categoria/1').pipe(
+      map(this.crearArreglo)
+    )
+  }
+  
+  getCategoriaInversion(){//traer grupo de articulos relacionados a la categoria inversion
+    return this._http.get(this.baseURL+'categoria/2').pipe(
+      map(this.crearArreglo)
+    )
+  }
+
   getCategoriaEmprender(){ //traer grupo de articulos por categoria categeoria 3 es emprender y llena el espacio azul principal
     return this._http.get(this.baseURL+'categoria/3').pipe(
       map(this.crearArreglo)
     );
   }
 
-  getCategoriaInversion(){//traer grupo de articulos relacionados a la categoria inversion
-    return this._http.get(this.baseURL+'categoria/2').pipe(
+  getCategoriaMercados(){ //traer grupo de articulos por categoria categeoria 3 es emprender y llena el espacio azul principal
+    return this._http.get(this.baseURL+'categoria/4').pipe(
+      map(this.crearArreglo)
+    );
+  }
+
+  getCategoriaCripto(){//traer grupo de articulos para la categoria criptomonedas
+    return this._http.get(this.baseURL+'categoria/5').pipe(
       map(this.crearArreglo)
     )
   }
+
+
+  
 
 
 

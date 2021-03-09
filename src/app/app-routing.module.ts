@@ -1,9 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './components/app/app.component';
-import { CategoriesComponent } from './components/public/categories/categories.component';
-import { LoginComponent } from './components/public/login/login.component';
-import { PostComponent } from './components/public/post/post.component';  
+import { Routes, RouterModule } from '@angular/router';  
 import { PublicComponent } from './components/public/public.component';
 
 

@@ -5,41 +5,37 @@
     </div>
 </div>
 <div id="principal" class="row">
-  <div class="col col-xs-6 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-      <a routerLink="/post">
+  <div class="col-12 col-xs-6 col-sm-12 col-md-12 col-lg-12 col-xl-12" *ngFor="let articulo of articulos; let i = index; first as isfirst">
+    <div *ngIf="isfirst"> 
+    <a routerLink="/post">
       <div class="card bg-dark text-white">
         <div class="imagen">
-          <img src="https://librosostenibilidad.files.wordpress.com/2017/03/paisaje-cultura-sostenibilidad.jpg" class="card-img img-fluid" alt="...">
+          <img src="{{photoPost}}{{articulo.foto}}" class="card-img img-fluid" alt="...">
         </div>
         <div id="element-over" class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-            <h5 class="card-title">The Only Playbook You Need to Maintain High Customer Engagement</h5>
+            <h5 class="card-title">{{articulo.titulo}}</h5>
            
             <div class="row name">
-              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"><img class="perfil" src="assets/autores/Maria1.png" alt=""> Maria Lorem Ipsum</div>
-              <div class="col col-sm-6 col-md-6 col-lg-2 col-xl-2 mt-3"><img class="clock" src="assets/clock.svg" alt=""> 12 minutos</div>
-              <div class="col col-sm-6 col-md-6 col-lg-2 col-xl-2 mt-3"><img class="clock" src="assets/calendar.svg" alt="">  Enero 08</div>
+              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"><img class="perfil" src="{{photoAutor}}{{articulo.perfil}}" alt=""> {{articulo.autor}}</div>
+              <div class="col col-sm-6 col-md-6 col-lg-2 col-xl-2 mt-3"><img class="clock" src="assets/clock.svg" alt=""> {{articulo.tiempo}} minutos</div>
+              <div class="col col-sm-6 col-md-6 col-lg-2 col-xl-4 mt-3"><img class="clock" src="assets/calendar.svg" alt=""> {{articulo.fecha}}</div>
             </div>
             
           </div>
         </div>
       </a>
+    </div> 
   </div>
 </div>
 
-<app-card-post></app-card-post>
-
-<app-card-post></app-card-post>
+<app-card-cripto></app-card-cripto>
 
 <app-suscribe></app-suscribe> <!-- tarjeta que nos permitira suscribirnos y se encuentra en medio de los post de una categoria -->
 
-<app-card-post></app-card-post>
-
-<app-card-post></app-card-post>
+<app-card-cripto-two></app-card-cripto-two>
 
 <app-suscribe-two></app-suscribe-two>
 
-<app-card-post></app-card-post>
-
-<app-card-post></app-card-post>
+<app-card-cripto-three></app-card-cripto-three>
 
 <app-paginator></app-paginator>

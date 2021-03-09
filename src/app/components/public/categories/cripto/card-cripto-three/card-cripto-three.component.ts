@@ -2,14 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Articulo } from 'src/app/models/articulo';
 import { ArticuloService } from 'src/app/services/articulo.service';
 
-
 @Component({
-  selector: 'app-principal',
-  templateUrl: './principal.component.html',
-  styleUrls: ['./principal.component.css']
+  selector: 'app-card-cripto-three',
+  templateUrl: './card-cripto-three.component.html',
+  styleUrls: ['./card-cripto-three.component.css']
 })
-export class PrincipalComponent implements OnInit {
- 
+export class CardCriptoThreeComponent implements OnInit {
+
+  
   articulos: Articulo[] = [];
   photoPost = 'http://amaliath3code.com/laravel/public/article/';
   photoAutor = 'http://amaliath3code.com/laravel/public/author/';
@@ -19,9 +19,7 @@ export class PrincipalComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.articuloService.getCategoriaFinanzas().subscribe(res => this.articulos = res)
+    this.articuloService.getCategoriaCripto().subscribe(res => this.articulos = res.reverse())
     
   }
-//esto es para la categoria de finanzas
 }
-

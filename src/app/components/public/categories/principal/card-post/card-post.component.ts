@@ -18,7 +18,7 @@ export class CardPostComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.articuloService.getCategoriaInversion().subscribe(res => this.articulos = res)
+    this.articuloService.getCategoriaFinanzas().subscribe(res => this.articulos = res)
     
    /*  this.articuloService.getUltimoArticulo().subscribe(data => this.lastArticulos = data) */
   }
