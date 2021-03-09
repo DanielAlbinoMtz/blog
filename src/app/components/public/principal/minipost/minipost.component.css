@@ -3,7 +3,9 @@
     padding-bottom: 6rem;
 }
 
-
+.categoria{
+    text-transform: capitalize;
+}
 
 .title{
     font-size: calc(1.29375rem + 0.19125*(100vw - 36rem)/39);
@@ -37,6 +39,7 @@
 
  #element-over{
      padding: 2rem 4rem;
+     background-color: rgba(0,0,0,0.2);
  }
 
 
@@ -53,6 +56,7 @@
     font-size: calc(1em + 1.5vw)!important;
     font-weight: bold;
     margin-top: 1rem;
+    width: 90%;
 }
 
 
@@ -85,13 +89,14 @@
 
 
 .imagen img{
-   
+    
     transition: 0.5s all ease-in-out; 
 }
 
 .sobreponer{
     position: absolute;
     padding-right: 2rem;
+    width: 100%;
     
 }
 
@@ -103,6 +108,7 @@
     position: relative;
     margin-bottom: 1rem;
     
+    text-transform: capitalize;
     bottom: 0px;
     border: none;
     background: #f6f6f7;
@@ -111,6 +117,7 @@
 .clock{
     width: 24px;
     height: 24px;
+    margin-right: 5px;
    
 }
 

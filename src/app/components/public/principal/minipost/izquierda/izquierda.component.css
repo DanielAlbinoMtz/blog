@@ -16,7 +16,9 @@
     top: 30px;
     max-height: 300px;
 }
-
+.card-img-overlay{
+    background-color: rgba(0,0,0,0.3);
+}
  
  
  .card-title{

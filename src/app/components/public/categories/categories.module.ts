@@ -13,10 +13,13 @@ import { CrecimientoComponent } from './emprender/crecimiento.component';
 import { RouterModule } from '@angular/router';
 import { MercadosComponent } from './mercados/mercados.component';
 import { CriptoComponent } from './cripto/cripto.component';
+import { CardInversionComponent } from './inversion/card-inversion/card-inversion.component';
+import { CardInversionTwoComponent } from './inversion/card-inversion-two/card-inversion-two.component';
+import { CardInversionTreeComponent } from './inversion/card-inversion-tree/card-inversion-tree.component';
 
 
 @NgModule({
-  declarations: [PrincipalComponent, CardPostComponent, SuscribeComponent, SuscribeTwoComponent, PaginatorComponent, InversionComponent, CrecimientoComponent, MercadosComponent, CriptoComponent],
+  declarations: [PrincipalComponent, CardPostComponent, SuscribeComponent, SuscribeTwoComponent, PaginatorComponent, InversionComponent, CrecimientoComponent, MercadosComponent, CriptoComponent, CardInversionComponent, CardInversionTwoComponent, CardInversionTreeComponent],
   imports: [
     CommonModule,
     CategoriesRoutingModule,

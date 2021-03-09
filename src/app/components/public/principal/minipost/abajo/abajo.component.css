@@ -36,6 +36,7 @@ span{
 .sobreponer{
     position: relative;
     overflow: hidden;
+    max-height: 163px;
 }
 
 .sobreponer img{
@@ -58,6 +59,8 @@ span{
     border: none;
     background: #f6f6f7;
     font-size: 0.8rem;
+
+    text-transform: capitalize;
 }
 
 

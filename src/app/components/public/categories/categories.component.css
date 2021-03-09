@@ -20,6 +20,13 @@
     }
 }
 
+@media(max-width:500px){
+    #componentes{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
 
 @media (min-width: 859px) {
     .boton-oculto {

@@ -1,53 +1,42 @@
 <div id="bottom" class="row mt-5">
 
-<div id="uno" class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-<div class="card mb-3">
-    <div class="sobreponer">
-        <img src="https://res.cloudinary.com/dn1j6dpd7/image/fetch/f_auto,q_auto,w_564,h_204,c_fill/https://success-cms.labs.livechatinc.com/app/uploads/2020/12/LiveChat-Legal-Segment-Customers-and-Offer-Legal-Support.png" class="card-img-top" alt="...">
-    </div>
-    <div class="tag">
-        <a class="btn sobre">Inversión</a>
+  <div id="uno" class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" *ngFor="let articulo of articulos | slice:0:1; let i = index;">
+  <div class="card mb-3">
+      <div class="sobreponer">
+          <img src="{{photoPost}}{{articulo.foto}}" class="card-img-top" alt="...">
       </div>
-    <div class="card-body">
-        <p class="card-text"><small class="text-muted">4 min read | 03 Dec | Malgorzata Sikora</small></p>
-        
-        
-       <!--  <p class="name">
-            <img class="perfil" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt=""> Jon Tucker  
-            <img class="clock" src="https://www.livechat.com/success/icons/time-to-read.b19f23fb38fc3a0447471f0910ac51fc917cd65a8ed1f267ee7ff61be6a07f84.svg" alt=""> 12 minutes 
-            <img class="clock" src="https://www.livechat.com/success/icons/calendar.svg" alt="">Oct 20, 2020
-          </p>  -->
-        
-          <h5 class="card-title">Legal Is a Product: How To Segment Your Customers</h5>
-        <p class="card-text">Writing online documents is always a challenge, and we know that to be Writing online documents is always a challenge, and we know that to be true at LiveChat. That’s why we’ve prepared a free online privacy policy generator to assist you... <span>continuar leyendo</span></p>
-      
-    </div>
-</div>
-</div>
-<div id="dos" class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-    <div class="card mb-3">
-        <div class="sobreponer">
-            <img src="https://res.cloudinary.com/dn1j6dpd7/image/fetch/f_auto,q_auto,w_564,h_204,c_fill/https://success-cms.labs.livechatinc.com/app/uploads/2020/10/Privacy-policy-generating-explained.jpg" class="card-img-top" alt="...">
+      <div class="tag">
+          <a class="btn sobre">{{articulo.categoria}}</a>
         </div>
-        <div class="tag">
-            <a class="btn sobre">Emprender</a>
+      <div class="card-body">
+          <p class="card-text"><small class="text-muted">{{articulo.tiempo}} min lectura | {{articulo.fecha}} | {{articulo.autor}}</small></p>
+                 
+            <h5 class="card-title">{{articulo.titulo}}</h5>
+          <p class="card-text">{{articulo.extracto}}... <span>continuar leyendo</span></p>
+        
+      </div>
+  </div>
+  </div>
+  <div id="dos" class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" *ngFor="let articulo of articulos | slice:1:2; let i = index;">
+      <div class="card mb-3">
+          <div class="sobreponer">
+              <img src="{{photoPost}}{{articulo.foto}}" class="card-img-top" alt="...">
           </div>
-        <div class="card-body">
-        <p class="card-text"><small class="text-muted">4 min read | 03 Dec | Malgorzata Sikora</small></p>
-        <!-- <p class="name">
-            <img class="perfil" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt=""> Jon Tucker  
-            <img class="clock" src="https://www.livechat.com/success/icons/time-to-read.b19f23fb38fc3a0447471f0910ac51fc917cd65a8ed1f267ee7ff61be6a07f84.svg" alt=""> 12 minutes 
-            <img class="clock" src="https://www.livechat.com/success/icons/calendar.svg" alt="">Oct 20, 2020
-          </p>  -->
-        
-        <h5 class="card-title">Generating a Privacy Policy Explained</h5>
-        <p class="card-text">If you run an online business, most likely you receive a number of requests concerning documents that your customers would like to sign. We know it’s a demanding process...  <span>continuar leyendo</span></p>
+          <div class="tag">
+              <a class="btn sobre">{{articulo.categoria}}</a>
+            </div>
+          <div class="card-body">
+          <p class="card-text"><small class="text-muted">{{articulo.tiempo}} min lectura | {{articulo.fecha}} | {{articulo.autor}}</small></p>
+         
           
-        </div>
-    </div>
-    </div>
- 
-</div>
+          <h5 class="card-title">{{articulo.titulo}}</h5>
+          <p class="card-text">{{articulo.extracto}}...  <span>continuar leyendo</span></p>
+            
+          </div>
+      </div>
+      </div>
+   
+  </div>
 
 <script type="text/javascript">
     $(window).resize(function() {

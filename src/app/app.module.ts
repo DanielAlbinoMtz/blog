@@ -34,7 +34,7 @@ import { PostRoutingModule } from './components/public/post/post-routing.module'
 import { RelatedArticleComponent } from './components/public/related-article/related-article.component';
 import { ArticlesTrendComponent } from './components/public/principal/minipost/trend/articles-trend/articles-trend.component';
 /*evitar los errores de recarga */
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -76,7 +76,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     FormsModule,
     HttpClientModule,
     PostModule,
-    PostRoutingModule
+    PostRoutingModule,
+    CommonModule
     
     
     

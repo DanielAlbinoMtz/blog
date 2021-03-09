@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './components/app/app.component';
 import { CategoriesComponent } from './components/public/categories/categories.component';
 import { LoginComponent } from './components/public/login/login.component';
-import { PostComponent } from './components/public/post/post.component';
+import { PostComponent } from './components/public/post/post.component';  
 import { PublicComponent } from './components/public/public.component';
 
 
@@ -18,7 +18,7 @@ loadChildren: () => import('./components/public/categories/categories.module').t
 {path: 'autores',
 loadChildren: () => import('./components/public/autores/autores.module').then(m=> m.AutoresModule)
 }, 
-{path: 'login', component: LoginComponent},
+/* {path: 'login', component: LoginComponent}, */
 
 {path: 'post', 
 loadChildren:() => import('./components/public/post/post.module').then(m=> m.PostModule)

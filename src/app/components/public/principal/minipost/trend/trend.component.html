@@ -1,13 +1,13 @@
 <!-- empieza imagen principal de trend -->
 
-<div class="tarjeta">
-  <a routerLink="/inversion/post">
+<div class="tarjeta" *ngFor="let articulo of articulos; let i = index;  last as isLast">
+  <a *ngIf="isLast" routerLink="/inversion/post">
       <div class="card mt-3 mb-3  mb-md-0">
         <div class="row">
           <div class="col-md-5 ">
             <div class="imagen sobreponer">
             <img
-              src="https://assets.eleconomista.com.mx/__export/1605403891778/sites/eleconomista/img/2020/11/11/inversion-ahorro-shutterstock.jpg_2118499843.jpg"
+              src="{{photoPost}}{{articulo.foto}}"
               class="img-fluid"
               alt=""
             />
@@ -15,14 +15,14 @@
           </div>
           <div class="col-md-7 texto">
             <h5 class="card-title">
-              Remote Work Has Arrived: The History, Best Practices, Tips, Dos, and Don’ts
+              {{articulo.titulo}}
             </h5>
-            <p class="card-text mb-5">Omnichannel marketing has been a buzzword for some time now, and for good reason. Rather than putting all your eggs in one basket and concentrating solely on, say, email campaigns, omnichannel marketing uses multiple channels to provide your customers with an immersive,... <span>continuar leyendo</span></p>
+            <p class="card-text mb-5">{{articulo.extracto}}... <span>continuar leyendo</span></p>
             <div class="imagenes mt-5">
               <div class="div row name">
-                <div class="col-sm-12 col-md-12 col-lg-5"><img class="perfil" src="assets/autores/Maria1.png" alt=""> Maria Lorem Ipsum</div>
-                <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-2"><img class="clock" src="assets/clock.svg" alt=""> 12 minutos</div>
-                <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-2"><img class="clock" src="assets/calendar.svg" alt="">  Enero 08</div>
+                <div class="col-sm-12 col-md-12 col-lg-5"><img class="perfil" src="{{photoAutor}}{{articulo.perfil}}" alt=""> {{articulo.autor}}</div>
+                <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-2"><img class="clock" src="assets/clock.svg" alt=""> {{articulo.tiempo}} minutos</div>
+                <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-2"><img class="clock" src="assets/calendar.svg" alt="">  {{articulo.fecha}}</div>
               </div>
           </div> 
           </div>

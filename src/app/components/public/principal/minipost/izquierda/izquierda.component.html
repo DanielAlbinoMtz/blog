@@ -1,35 +1,38 @@
 
 <!-- empieza tarjeta principal izquiera -->
-<a routerLink="/post">
-  <div class="card bg-dark text-white mb-3" style="height: 250px">
-    <!-- checar aqui -->
-    <img
-      style="height: 250px"
-      src="https://conceptodefinicion.de/wp-content/uploads/2014/03/ciudad.jpg"
-      class="card-img"
-      alt="..."
-    />
-    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-      <h5 class="card-title1">
-        The Only Playbook You Need to Maintain High Customer Engagement
-      </h5>
-      <p class="card-text">12 min read | Jan 08</p>
+<div  *ngFor="let articulo of articulos; let i = index; last as isLast" >
+  <a routerLink="/post">
+    <div *ngIf="isLast" class="card bg-dark text-white mb-3" style="height: 250px">
+      <!-- checar aqui -->
+      <img
+        style="height: 250px"
+        src="{{photoPost}}{{articulo.foto}}"
+        class="card-img"
+        alt="..."
+      />
+      <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+        <h5 class="card-title1">
+          {{articulo.titulo}}
+        </h5>
+        <p class="card-text">{{articulo.tiempo}} min lectura | {{articulo.fecha}}</p>
+      </div>
     </div>
+  </a>
   </div>
-</a>
 <!-- termina tarjeta principal izquierda -->
 
 
 <!-- empieza grupo de tarjetas horizontales -->
-<div id="container" class="container mt-5">
+<div id="container" class="container mt-5" >
   <!-- tarjetas horizontales -->
+  <div *ngFor="let articulo of articulos | slice:0:4; let i = index">
   <a routerLink="/post">
-    <div class="card py-3 px-3">
+    <div class="card py-3 px-3 mb-3">
       <div class="row">
         <div class="col-md-4 ">
           <div class="imagen sobreponer">
           <img
-            src="https://tec.mx/sites/default/files/styles/header_full/public/2020-03/economia-global.jpg?h=920929c4&itok=6QANHYpF"
+            src="{{photoPost}}{{articulo.foto}}"
             class="img img-fluid mt-3"
             alt=""
           />
@@ -37,83 +40,16 @@
         </div>
         <div class="col-md-8">
           <p class="card-text">
-            <small class="text-muted">12 min read | Jan 08 |</small>
+            <small class="text-muted">{{articulo.tiempo}} min lectura | {{articulo.fecha}}</small>
           </p>
           <h5 class="card-title">
-            US Government Files Suit Against Facebook Alleging It’s a Monopoly
+            {{articulo.titulo}}
           </h5>
         </div>
       </div>
     </div>
   </a>
-
-  <a routerLink="/post">
-    <div class="card py-3 px-3 mt-3">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="imagen sobreponer">
-          <img
-            src="https://www.economiasimple.net/wp-content/uploads/2018/04/calcular-rentabilidad-fondos-inversion.jpg"
-            class="img-fluid"
-            alt=""
-          />
-        </div>
-        </div>
-        <div class="col-md-8">
-          <p class="card-text">
-            <small class="text-muted">12 min read | Jan 08 |</small>
-          </p>
-          <h5 class="card-title">
-            ¿Porqué deberias invertir tu dinero en Axin?
-          </h5>
-        </div>
-      </div>
-    </div>
-  </a>
-
-  <a routerLink="/post">
-    <div class="card py-3 px-3 mt-3">
-      <div class="row">
-        <div class="col-md-4">
-          <img
-            src="https://www.icasas.mx/noticias/wp-content/uploads/2019/08/inversion-hoteles.jpg"
-            class="img-fluid"
-            alt=""
-          />
-        </div>
-        <div class="col-md-8">
-          <p class="card-text">
-            <small class="text-muted">12 min read | Jan 08 |</small>
-          </p>
-          <h5 class="card-title">
-            US Government Files Suit Against Facebook Alleging It’s a Monopoly
-          </h5>
-        </div>
-      </div>
-    </div>
-  </a>
-
-  <a routerLink="/post">
-    <div class="card py-3 px-3 mt-3 mb-3">
-      <div class="row">
-        <div class="col-md-4">
-          <img
-            src="https://assets.eleconomista.com.mx/__export/1605403891778/sites/eleconomista/img/2020/11/11/inversion-ahorro-shutterstock.jpg_2118499843.jpg"
-            class="img-fluid"
-            alt=""
-          />
-        </div>
-        <div class="col-md-8">
-          <p class="card-text">
-            <small class="text-muted">12 min read | Jan 08 |</small>
-          </p>
-          <h5 class="card-title">
-            US Government Files Suit Against Facebook Alleging It’s a Monopoly
-          </h5>
-        </div>
-      </div>
-    </div>
-  </a>
+  </div>
 </div>
 <!-- terminan tarjetas horizontales izquierdas -->
 
@@ -121,22 +57,23 @@
 
 <div id="sticky">
   <h2 class="title">Featured post</h2>
-
+<div *ngFor="let articulo of articulos; let i = index; first as isfirst">
   <a routerLink="/post">
-    <div class="card bg-dark text-white mb-3" style="height: 250px">
+    <div *ngIf="isfirst" class="card bg-dark text-white mb-3" style="height: 250px">
       <!-- checar aqui -->
-      <img
+      <img 
         style="height: 250px"
-        src="https://conceptodefinicion.de/wp-content/uploads/2014/03/ciudad.jpg"
+        src="{{photoPost}}{{articulo.foto}}"
         class="card-img"
         alt="..."
       />
       <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-        <h5 class="card-title1">
-          The Only Playbook You Need to Maintain High Customer Engagement
+        <h5 class="card-title1"  >
+         {{articulo.titulo}}
         </h5>
-        <p class="card-text">12 min read | Jan 08</p>
+        <p class="card-text">{{articulo.tiempo}} min lectura | {{articulo.fecha}} </p>
       </div>
     </div>
   </a>
+</div>
 </div>
