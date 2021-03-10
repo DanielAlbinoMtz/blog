@@ -9,7 +9,7 @@ import { ArticuloService } from 'src/app/services/articulo.service';
 })
 export class DerechaComponent implements OnInit {
 
-  articulos: Articulo[] = [];
+  articulos: Articulo;
   photoPost = 'http://amaliath3code.com/laravel/public/article/';
   photoAutor = 'http://amaliath3code.com/laravel/public/author/';
 
@@ -18,7 +18,7 @@ export class DerechaComponent implements OnInit {
   ) { }
 
   ngOnInit(){
-    this.articuloService.getAllArticulos().subscribe(res => this.articulos = res)
+    this.articuloService.getAllArticulos().subscribe(res => this.articulos = res, err=>console.log(err))
   }
 
 }

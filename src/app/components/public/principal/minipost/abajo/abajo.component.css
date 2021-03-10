@@ -4,6 +4,11 @@ span{
     font-weight: bold;
 }
 
+.redirect{
+    text-decoration: none;
+    color: #1b1b20;
+}
+
 .card-title{
     /* font-size: 1.9602rem; */
     font-weight: bold;

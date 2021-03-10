@@ -1,5 +1,6 @@
-<div *ngFor="let articulo of articulos | slice: 0:10; let i = index">
-  <a routerLink="/post">
+<div *ngFor="let articulo of articulos; let i = index">
+  <div *ngIf="i<=9">
+  <a [routerLink]="['/post', articulo.id]">
     <div class="card mb-5">
       <div class="imagen sobreponer">
         <img
@@ -33,4 +34,5 @@
       </div>
     </div>
   </a>
+</div>
 </div>

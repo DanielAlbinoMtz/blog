@@ -27,15 +27,13 @@ baseURL = 'http://amaliath3code.com/api/' ;
   }
 
   getArticulo(){ /*servicio para el minipost que es el primer cuadro este solo llamara al ultimo en el array */
-    return this._http.get(this.baseURL+'articulos').pipe(
+    return this._http.get(this.baseURL+'articulos')/* .pipe(
       map( this.crearArreglo )
-    );
+    ); */
    }
 
    getArticuloCategoria(){ //traer grupo de articulos por categoria llenara el lado izquierdo
-    return this._http.get(this.baseURL+'categoria/4').pipe(
-      map(this.crearArreglo)
-    );
+    return this._http.get(this.baseURL+'categoria/4')
     /*categorias id
       finanzas    1
       inversion   2
@@ -45,39 +43,39 @@ baseURL = 'http://amaliath3code.com/api/' ;
   }
 
   getAllArticulos(){/* Este metodo llama a todos los articulos que existen y llena el lado derecho */
-    return this._http.get(this.baseURL+'articulos').pipe(
+    return this._http.get(this.baseURL+'articulos')/* .pipe(
       map(this.crearArreglo)
-    )
+    ) */
   }
 
   getCategoriaFinanzas(){//traer grupo de articulos relacionados a la categoria finanzas
-    return this._http.get(this.baseURL+'categoria/1').pipe(
+    return this._http.get(this.baseURL+'categoria/1')/* .pipe(
       map(this.crearArreglo)
-    )
+    ) */
   }
   
   getCategoriaInversion(){//traer grupo de articulos relacionados a la categoria inversion
-    return this._http.get(this.baseURL+'categoria/2').pipe(
+    return this._http.get(this.baseURL+'categoria/2')/* .pipe(
       map(this.crearArreglo)
-    )
+    ) */
   }
 
   getCategoriaEmprender(){ //traer grupo de articulos por categoria categeoria 3 es emprender y llena el espacio azul principal
-    return this._http.get(this.baseURL+'categoria/3').pipe(
+    return this._http.get(this.baseURL+'categoria/3')/* .pipe(
       map(this.crearArreglo)
-    );
+    ); */
   }
 
   getCategoriaMercados(){ //traer grupo de articulos por categoria categeoria 3 es emprender y llena el espacio azul principal
-    return this._http.get(this.baseURL+'categoria/4').pipe(
+    return this._http.get(this.baseURL+'categoria/4')/* .pipe(
       map(this.crearArreglo)
-    );
+    ); */
   }
 
   getCategoriaCripto(){//traer grupo de articulos para la categoria criptomonedas
-    return this._http.get(this.baseURL+'categoria/5').pipe(
+    return this._http.get(this.baseURL+'categoria/5')/* .pipe(
       map(this.crearArreglo)
-    )
+    ) */
   }
 
 
