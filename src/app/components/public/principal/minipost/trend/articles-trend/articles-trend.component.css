@@ -29,6 +29,7 @@
  /*    transform-origin: 0 0;*/
     transition: transform .25s, visibility .25s ease-in; 
     overflow: hidden;
+    min-height: 464px;
 }
 
 .card:hover{

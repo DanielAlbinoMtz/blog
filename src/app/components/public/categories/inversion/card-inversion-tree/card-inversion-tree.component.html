@@ -1,5 +1,6 @@
-<div class="tarjeta" *ngFor="let articulo of articulos | slice:5:14; let i = index;" >
-    <a routerLink="/inversion/post">
+<div class="tarjeta" *ngFor="let articulo of articulos; let i = index;" >
+    <div *ngIf="i>4">
+        <a [routerLink]="['/post', articulo.id]">
         <div class="card mt-3 mb-3  mb-md-0">
           <div id="principal" class="row">
             <div class="col-md-5 ">
@@ -28,3 +29,4 @@
         </div>
       </a>
     </div>
+  </div>

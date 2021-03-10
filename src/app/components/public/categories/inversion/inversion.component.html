@@ -5,9 +5,9 @@
     </div>
 </div>
 <div id="principal" class="row">
-  <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"  *ngFor="let articulo of articulos; let i = index; first as isfirst" >
-      <div *ngIf="isfirst">
-    <a routerLink="/post">
+  <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"  *ngFor="let articulo of articulos; let i = index; last as isLast" >
+      <div *ngIf="isLast">
+    <a [routerLink]="['/post', articulo.id]">
       <div class="card text-white">
         <div class="imagen">
           <img src="{{photoPost}}{{articulo.foto}}" class="card-img img-fluid" alt="...">

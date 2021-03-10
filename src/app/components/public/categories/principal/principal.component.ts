@@ -10,7 +10,7 @@ import { ArticuloService } from 'src/app/services/articulo.service';
 })
 export class PrincipalComponent implements OnInit {
  
-  articulos: Articulo[] = [];
+  articulos: Articulo;
   photoPost = 'http://amaliath3code.com/laravel/public/article/';
   photoAutor = 'http://amaliath3code.com/laravel/public/author/';
 

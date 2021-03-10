@@ -54,6 +54,7 @@ font-weight: bold;
 
  #element-over{
      padding: 2rem 4rem;
+     background-color: rgba(0,0,0,0.2);
  }
 
 

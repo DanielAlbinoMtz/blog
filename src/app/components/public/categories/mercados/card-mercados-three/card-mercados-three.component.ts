@@ -10,7 +10,7 @@ import { ArticuloService } from 'src/app/services/articulo.service';
 export class CardMercadosThreeComponent implements OnInit {
 
   
-  articulos: Articulo[] = [];
+  articulos: Articulo;
   photoPost = 'http://amaliath3code.com/laravel/public/article/';
   photoAutor = 'http://amaliath3code.com/laravel/public/author/';
 
@@ -19,7 +19,7 @@ export class CardMercadosThreeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.articuloService.getCategoriaMercados().subscribe(res => this.articulos = res.reverse())
+    this.articuloService.getCategoriaMercados().subscribe(res => this.articulos = res)
     
   }
 }

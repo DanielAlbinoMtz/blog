@@ -10,7 +10,9 @@ import { Articulo } from '../models/articulo';
   providedIn: 'root'
 })
 export class ArticuloService {
-baseURL = 'http://amaliath3code.com/api/' ;
+baseURL = 'http://amaliath3code.com/api/';
+perfil = 'http://amaliath3code.com/laravel/public/author/'
+fotoPost = 'http://amaliath3code.com/laravel/public/article/'
   constructor( private _http:HttpClient) { }
 
   public articulo: Articulo={

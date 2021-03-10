@@ -19,7 +19,7 @@ export class ArticlesTrendComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.articuloService.getArticulo().subscribe(resp => this.articulos = resp.reverse())
+    this.articuloService.getArticulo().subscribe(resp => this.articulos = resp)
    
   
   }

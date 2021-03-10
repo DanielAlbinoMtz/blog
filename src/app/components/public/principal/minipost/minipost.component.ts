@@ -21,6 +21,7 @@ export class MinipostComponent implements OnInit {
   ngOnInit(): void {
     this.articuloService.getArticulo().subscribe(resp => this.articulos = resp)
 
+    
 
   }
 

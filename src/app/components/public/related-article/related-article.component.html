@@ -5,50 +5,23 @@
 </div>
 
 
-<div class="card-deck">
-    
-    <div class="card">
-        <a routerLink="/post">
-          <div class="sobreponer">
-              <a class="btn sobre">Finanzas</a>
-              <img src="https://res.cloudinary.com/dn1j6dpd7/image/fetch/f_auto,q_auto,w_352,h_190,c_fill/https://success-cms.labs.livechatinc.com/app/uploads/2021/01/Screenshot-2021-01-20-at-11.22.01.png" class="card-img-top" alt="...">
-          </div>
-      <div class="card-body">
-        <p class="card-text"><small class="text-muted">12 mins leer | Ene 20  | Ania Rubkiewicz</small></p>
-        <h5 class="card-title">Death to 2020. With the Success Video Team.</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer... <span>continuar leyendo</span></p>
-      </div>
-    </a>
-    </div>
- 
+<div class="row">
 
+  <div class="col-4" *ngFor="let articulo of articulos; let i = index;">
+  <div *ngIf="i<=2">
     <div class="card">
-      <a routerLink="/post">
+      <a routerLink="/post/{{articulo.id}}">
         <div class="sobreponer">
-          <a class="btn sobre">Finanzas</a>
-          <img src="https://res.cloudinary.com/dn1j6dpd7/image/fetch/f_auto,q_auto,w_352,h_190,c_fill/https://success-cms.labs.livechatinc.com/app/uploads/2021/01/maxresdefault.jpg" class="card-img-top" alt="...">
-      </div>
-      <div class="card-body">
-        <p class="card-text"><small class="text-muted">12 mins leer | Ene 20  | Ania Rubkiewicz</small></p>
-        <h5 class="card-title">How Customer Service Can Make You Succeed</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content... <span>continuar leyendo</span></p>
-      </div>
-    </a>
-    </div>
-
-    <div class="card">
-      <a routerLink="/post">
-        <div class="sobreponer">
-          <a class="btn sobre">Finanzas</a>
-          <img src="https://res.cloudinary.com/dn1j6dpd7/image/fetch/f_auto,q_auto,w_352,h_190,c_fill/https://success-cms.labs.livechatinc.com/app/uploads/2021/01/Boosting_ecommerce_sales_thumbnail.png" class="card-img-top" alt="...">
-      
+            <a class="btn sobre">{{articulo.categoria}}</a>
+            <img src="{{photoPost}}{{articulo.foto}}" class="card-img-top" alt="...">
         </div>
-
-      <div class="card-body">
-        <p class="card-text"><small class="text-muted">12 mins leer | Ene 20  | Ania Rubkiewicz</small></p>
-        <h5 class="card-title">The Ultimate Guide to Boosting Ecommerce Sales</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action... <span>continuar leyendo</span></p>
-      </div>
-    </a>
+    <div class="card-body">
+      <p class="card-text"><small class="text-muted">12 mins leer | Ene 20  | Ania Rubkiewicz</small></p>
+      <h5 class="card-title">Death to 2020. With the Success Video Team.</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer... <span>continuar leyendo</span></p>
     </div>
+  </a>
+</div>
   </div>
+
+</div>

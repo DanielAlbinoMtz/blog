@@ -1,30 +1,32 @@
-<div class="tarjeta" *ngFor="let articulo of articulos | slice:5:14; let i = index;" >
-    <a routerLink="/post">
-        <div class="card mt-3 mb-3  mb-md-0">
-          <div id="principal" class="row">
-            <div class="col-md-5 ">
-              <div class="imagen sobreponer">
-              <img
-                src="{{photoPost}}{{articulo.foto}}"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-            </div>
-            <div class="col-md-7 texto">
-              <h5 class="card-title">
-               {{articulo.titulo}}
-              </h5>
-              <p class="card-text mb-5">{{articulo.extracto}}... <span>continuar leyendo</span></p>
-              <div class="imagenes mt-5">
-                <div class="div row name">
-                  <div class="col-sm-12 col-md-12 col-lg-5"><img class="perfil" src="{{photoAutor}}{{articulo.perfil}}" alt=""> {{articulo.autor}}</div>
-                  <div class="col col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3"><img class="clock" src="assets/clock.svg" alt=""> {{articulo.tiempo}} minutos</div>
-                  <div class="col col-sm-6 col-md-6 col-lg-5 col-xl-3 mt-3"><img class="clock" src="assets/calendar.svg" alt="">{{articulo.fecha}}</div>
-                </div>
-            </div> 
-            </div>
+<div class="tarjeta" *ngFor="let articulo of articulos; let i = index;" >
+  <div *ngIf="i>4">
+      <a [routerLink]="['/post', articulo.id]">
+      <div class="card mt-3 mb-3  mb-md-0">
+        <div id="principal" class="row">
+          <div class="col-md-5 ">
+            <div class="imagen sobreponer">
+            <img
+              src="{{photoPost}}{{articulo.foto}}"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          </div>
+          <div class="col-md-7 texto">
+            <h5 class="card-title">
+             {{articulo.titulo}}
+            </h5>
+            <p class="card-text mb-5">{{articulo.extracto}}... <span>continuar leyendo</span></p>
+            <div class="imagenes mt-5">
+              <div class="div row name">
+                <div class="col-sm-12 col-md-12 col-lg-5"><img class="perfil" src="{{photoAutor}}{{articulo.perfil}}" alt=""> {{articulo.autor}}</div>
+                <div class="col col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-3"><img class="clock" src="assets/clock.svg" alt=""> {{articulo.tiempo}} minutos</div>
+                <div class="col col-sm-6 col-md-6 col-lg-5 col-xl-3 mt-3"><img class="clock" src="assets/calendar.svg" alt="">{{articulo.fecha}}</div>
+              </div>
+          </div> 
           </div>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
+  </div>
+</div>
