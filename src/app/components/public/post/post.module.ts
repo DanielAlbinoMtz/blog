@@ -12,6 +12,7 @@ import { BitcoinComponent } from './inicio/articulos/bitcoin/bitcoin.component';
 import { SociedadComponent } from './inicio/articulos/sociedad/sociedad.component';
 import { EmprendedoresComponent } from './inicio/articulos/emprendedores/emprendedores.component';
 import { SocioComponent } from './inicio/articulos/socio/socio.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { SocioComponent } from './inicio/articulos/socio/socio.component';
   imports: [
     CommonModule,
     PostRoutingModule,
+    FormsModule
     
   ]
 })

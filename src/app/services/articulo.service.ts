@@ -13,6 +13,19 @@ export class ArticuloService {
 baseURL = 'http://amaliath3code.com/api/' ;
   constructor( private _http:HttpClient) { }
 
+  public articulo: Articulo={
+    id: null,
+    titulo: '',
+    extracto: '',
+    contenido: '',
+    tiempo: '',
+    fecha: '',
+    foto: '',
+    autor: '',
+    perfil: '',
+    categoria: '',
+  }
+
   getArticulo(){ /*servicio para el minipost que es el primer cuadro este solo llamara al ultimo en el array */
     return this._http.get(this.baseURL+'articulos').pipe(
       map( this.crearArreglo )
@@ -68,7 +81,11 @@ baseURL = 'http://amaliath3code.com/api/' ;
   }
 
 
-  
+  getArticuloID( id ){
+    return this._http.get(`${this.baseURL}articulos/${id}`).pipe(
+      map(this.crearArreglo)
+    );
+  }
 
 
 

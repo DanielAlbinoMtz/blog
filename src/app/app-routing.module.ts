@@ -16,7 +16,7 @@ loadChildren: () => import('./components/public/autores/autores.module').then(m=
 }, 
 /* {path: 'login', component: LoginComponent}, */
 
-{path: 'post', 
+{path: 'post/:id', 
 loadChildren:() => import('./components/public/post/post.module').then(m=> m.PostModule)
 }
 

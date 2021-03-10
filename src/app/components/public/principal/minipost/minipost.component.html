@@ -1,6 +1,6 @@
 <div id="principal" class="row">
     <div class="col-12 col-xs-6 col-sm-12 col-md-12 col-lg-12 col-xl-12" *ngFor="let articulo of articulos; let i = index;  last as isLast">
-        <a routerLink="/post">
+        <a [routerLink]="['/post', articulo.id]">
         <div *ngIf="isLast" class="card text-white">
           <div class="imagen">
             <img src="{{photoPost}}{{articulo.foto}}" class="card-img img-fluid" alt="...">
