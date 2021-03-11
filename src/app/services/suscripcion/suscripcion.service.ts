@@ -19,7 +19,7 @@ export class SuscripcionService {
     .set('EMAIL', data)
     .set('group[80463][2]', 'true')
     .set('b_524d6e87dd4ea8d25621ea01f&id_042db4d02b', '');
-    /* const mailChimpUrl = `${this.baseUrl}&${params.toString()}`;
-    return this.http.jsonp(mailChimpUrl, 'c'); */
+    const mailChimpUrl = `${this.baseUrl}&${params.toString()}`;
+    return this.http.jsonp(mailChimpUrl, 'c');
   }
 }
