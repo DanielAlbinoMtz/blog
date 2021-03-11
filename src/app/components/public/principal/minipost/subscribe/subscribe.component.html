@@ -1,13 +1,14 @@
+<!-- este formulario es para unirse a recibir el mailmarketing -->
 <div class="text">
   <div class="suscribe row">
   <div class="div col-sm-5 ">
   <h1 class="titulo">Únete a la comunidad</h1>
   <p class="description-category text-center">Recibe cada semana artículos, videos y guías para tomar mejores decisiones.</p>
-  <form class="form-group campos">
+  <form #suscribeForm=ngForm (ngSubmit)='onSubmit()' class="form-group campos">
       <div class="input-group">
       <!-- <input  class="form-control" placeholder="Correo electrónico"  ngModel name="nombre"> -->
       <div id="box" class="input-group form-control">            
-        <input class="form-control" type="text" placeholder="Correo electrónico" name="email">                       
+        <input autocomplete="off" [(ngModel)]="form.email" class="form-control" type="email" placeholder="Correo electrónico" name="email">                       
         <svg height="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <g>
@@ -48,7 +49,7 @@
 </g>
 <g>
 </g>
-</svg>
+        </svg>
       </div>
       <button type="submit"class="btn" type="submit">Suscríbete</button>
       </div>

@@ -27,7 +27,7 @@ import { AutoresModule } from './components/public/autores/autores.module';
 import { ModalComponent } from './components/public/modal/modal.component';
 import { RedesComponent } from './components/public/sidenav/conten/redes/redes.component';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 import { PostModule } from './components/public/post/post.module';
 import { PostComponent } from './components/public/post/post.component';
 import { PostRoutingModule } from './components/public/post/post-routing.module';
@@ -66,7 +66,7 @@ import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     CategoriesRoutingModule,
     AutoresRoutingModule,
     CategoriesModule,
@@ -77,7 +77,8 @@ import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/c
     HttpClientModule,
     PostModule,
     PostRoutingModule,
-    CommonModule
+    CommonModule,
+    HttpClientJsonpModule
     
     
     

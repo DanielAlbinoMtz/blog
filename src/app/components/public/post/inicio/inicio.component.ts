@@ -35,18 +35,18 @@ export class InicioComponent implements OnInit {
   constructor( private activatedRoute: ActivatedRoute,  private articuloService: ArticuloService ) { 
     
     this.activatedRoute.params.subscribe(params => {
-      console.log(params.id);
+      /* console.log(params.id); */
       this.id = params.id;
-    console.log(this.id);
+    /* console.log(this.id); */
     if(this.id){
       this.articuloService.getAllArticulos().subscribe((data: Articulo[])=>{
-       console.log(data); 
+       /* console.log(data);  */
        this.articulos = data;
         this.articulo = this.articulos.find((a)=>{
          return a.id == this.id;
          
         });
-        console.log(this.articulo);
+        /* console.log(this.articulo); */
       }, (err) => {console.log(err);});
     } 
   });
