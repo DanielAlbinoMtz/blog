@@ -5,7 +5,7 @@ import { PublicComponent } from './components/public/public.component';
 
 const routes: Routes = [
 //rutas publicas
-{path: '', redirectTo: 'blog',pathMatch: 'full'},
+{path: '', redirectTo: 'emprender',pathMatch: 'full'},
 {path:'blog',component:PublicComponent},
 /*rutas de categorias */
 {path: 'finanzas',

@@ -22,7 +22,7 @@
 </div>
   </div>
   <div id="dos" class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" *ngFor="let articulo of articulos; let i = index;">
-    <div *ngIf="i>1 && i<=2">
+    <div *ngIf="i>1 && i<2">
     <a class="redirect" [routerLink]="['/post',articulo.id]">
       <div class="card mb-3">
           <div class="sobreponer">

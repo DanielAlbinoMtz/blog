@@ -47,9 +47,10 @@ span{
  .card{
      border: none;   
      box-shadow: 0 2px 2px rgba(0,0,0,0); 
-     
+     border-radius: 0.5rem;
      transform-origin: 0 0;
      transition: transform .25s, visibility .25s ease-in;
+     margin-bottom: 1.5rem;
  }
  
  .card:hover{
@@ -122,5 +123,16 @@ span{
     border: none;
     background: #f6f6f7;
     font-size: 0.8rem;
+    text-transform: capitalize;
 }
-  
+  @media(min-width:900px){
+.card-img-top{
+    height: 165px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.card{
+    height: 474px;
+}
+
+}

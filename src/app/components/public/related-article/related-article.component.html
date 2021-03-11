@@ -7,7 +7,7 @@
 
 <div class="row">
 
-  <div class="col-4" *ngFor="let articulo of articulos; let i = index;">
+  <div class="col-11 col-sm-4" *ngFor="let articulo of articulos; let i = index;">
   <div *ngIf="i<=2">
     <div class="card">
       <a routerLink="/post/{{articulo.id}}">
@@ -16,9 +16,9 @@
             <img src="{{photoPost}}{{articulo.foto}}" class="card-img-top" alt="...">
         </div>
     <div class="card-body">
-      <p class="card-text"><small class="text-muted">12 mins leer | Ene 20  | Ania Rubkiewicz</small></p>
-      <h5 class="card-title">Death to 2020. With the Success Video Team.</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer... <span>continuar leyendo</span></p>
+      <p class="card-text"><small class="text-muted">{{articulo.tiempo}} mins leer | {{articulo.fecha}}  | {{articulo.autor}}</small></p>
+      <h5 class="card-title">{{articulo.titulo}}</h5>
+      <p class="card-text">{{articulo.extracto}}... <span>continuar leyendo</span></p>
     </div>
   </a>
 </div>

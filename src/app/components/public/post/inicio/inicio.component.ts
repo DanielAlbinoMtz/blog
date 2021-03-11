@@ -24,8 +24,10 @@ export class InicioComponent implements OnInit {
   }
 
    
-  photoPost = 'http://amaliath3code.com/laravel/public/article/';
-  photoAutor = 'http://amaliath3code.com/laravel/public/author/';
+  /* photoPost = 'http://amaliath3code.com/laravel/public/article/';
+  photoAutor = 'http://amaliath3code.com/laravel/public/author/'; */
+  photoPost = 'https://blog.axincapital.app/laravel/public/article/';
+  photoAutor = 'https://blog.axincapital.app/laravel/public/author/';
 
   id : any;
   articulos: Articulo[];

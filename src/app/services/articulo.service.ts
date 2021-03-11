@@ -10,9 +10,8 @@ import { Articulo } from '../models/articulo';
   providedIn: 'root'
 })
 export class ArticuloService {
-baseURL = 'http://amaliath3code.com/api/';
-perfil = 'http://amaliath3code.com/laravel/public/author/'
-fotoPost = 'http://amaliath3code.com/laravel/public/article/'
+/* baseURL = 'http://amaliath3code.com/api/'; */
+baseURL = 'https://blog.axincapital.app/api/';
   constructor( private _http:HttpClient) { }
 
   public articulo: Articulo={
@@ -35,7 +34,7 @@ fotoPost = 'http://amaliath3code.com/laravel/public/article/'
    }
 
    getArticuloCategoria(){ //traer grupo de articulos por categoria llenara el lado izquierdo
-    return this._http.get(this.baseURL+'categoria/4')
+    return this._http.get(this.baseURL+'categoria/3')
     /*categorias id
       finanzas    1
       inversion   2
