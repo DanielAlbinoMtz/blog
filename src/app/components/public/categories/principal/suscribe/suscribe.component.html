@@ -8,9 +8,9 @@
                 <p>Axin es la plataforma ideal para gestionar tu dinero en productos de renta fija  y renta variable.</p>
                 </div>
 
-                <form #suscribeForm=ngForm (ngSubmit)='onSubmit()' class="form-inline">
+                <form #suscribeForm (ngSubmit)='onSubmit()' class="form-inline">
                    <div id="box" class="form-group mx-sm-2 mb-2">
-                      <input autocomplete="off" type="email" name="email" [(ngModel)]="form.email" class="form-control" placeholder="Correo electrónico">
+                      <input autocomplete="false" type="email" name="email" [(ngModel)]="form.email" class="form-control" placeholder="Correo electrónico">
                       <svg height="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
       <g>
@@ -53,7 +53,7 @@
       </g>
                     </svg>
                     </div>
-                    <button type="submit" class="btn mb-2" [disabled]="!suscribeForm.valid">Quiero empezar</button>
+                    <button type="submit" class="btn mb-2">Quiero empezar</button>
                 </form>
 
             </div>

@@ -1,13 +1,13 @@
-<!-- este formulario es para unirse a axincapital.com -->
+<!-- esta tarjeta es del post articulo y es un formulario para unirse a axincapital.com -->
 <div class="text">
     <div class="suscribe row">
     <div class="div col-sm-12 col-md-5">
     <h1 class="titulo">Crecimiento en dólares</h1>
     <p class="description-category">Axin es la plataforma ideal para gestionar tu dinero en productos de renta fija y renta variable</p>
-    <form class="form-group campos">
+    <form  #suscribeForm (ngSubmit)='onSubmit()' class="form-group campos">
         <div class="input-group">
            <div id="box" class="input-group form-control">            
-                <input class="form-control" type="text" placeholder="Correo electrónico" name="email">                       
+                <input autocomplete="false" [(ngModel)]="form.email" class="form-control" type="email" placeholder="Correo electrónico" name="email">                       
                 <svg height="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
         <g>

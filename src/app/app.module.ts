@@ -35,6 +35,7 @@ import { RelatedArticleComponent } from './components/public/related-article/rel
 import { ArticlesTrendComponent } from './components/public/principal/minipost/trend/articles-trend/articles-trend.component';
 /*evitar los errores de recarga */
 import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { FiltroPipe } from './pipes/filtro.pipe';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/c
     PostComponent,
     RelatedArticleComponent,
     ArticlesTrendComponent,
+    FiltroPipe,
     
    /*  CardPostComponent,
     CardPostMiniComponent */

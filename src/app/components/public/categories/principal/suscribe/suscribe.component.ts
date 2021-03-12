@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { SuscripcionService } from 'src/app/services/suscripcion/suscripcion.service';
 
 @Component({
@@ -19,6 +20,7 @@ export class SuscribeComponent implements OnInit {
     this.susService.subscribeAxin(this.form.email).subscribe(res=>{
       console.log(this.form.email);
     }, err=> console.log(err));
+    window.location.href='https://axincapital.com/#/registro/'+this.form.email;
   }
 
 }

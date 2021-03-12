@@ -11,7 +11,7 @@ export class SuscripcionService {
   constructor(private http: HttpClient) { }
 
   subscribeAxin(data) {
-    alert('Listo te has unido a la mejor comunidad, bienvenido'+' '+data);
+    /* alert('Listo te has unido a la mejor comunidad, bienvenido'+' '+data); */
     const params = new HttpParams()
   
     .set('FNAME', 'AXIN')
