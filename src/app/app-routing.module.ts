@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';  
+import { FooterComponent } from './components/public/footer/footer.component';
 import { PublicComponent } from './components/public/public.component';
 
 
@@ -17,7 +18,11 @@ loadChildren: () => import('./components/public/autores/autores.module').then(m=
 /* {path: 'login', component: LoginComponent}, */
 {path: 'post/:id', 
 loadChildren:() => import('./components/public/post/post.module').then(m=> m.PostModule)
-}
+},
+
+{path: 'buscar/:texto',
+component: FooterComponent},
+
 
 /* {path: 'algo',component: AppComponent} */
 

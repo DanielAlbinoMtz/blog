@@ -22,18 +22,19 @@ const routes: Routes = [
     children: [
       { path: '', component: AutorComponent},
       /*rutas estaticas de autores */
-      { path: 'autor/nombre', component: AutorDetailsComponent},
+      { path: 'autor/:id', component:AutorDetailsComponent},
+     /*  { path: 'autor/nombre', component: AutorDetailsComponent},
       { path: 'autor/maria', component: MariaComponent},
       { path: 'autor/mario', component: MarioComponent},
       { path: 'autor/judith', component: JudithComponent},
       { path: 'autor/jose', component: JoseComponent},
       { path: 'autor/jeannette', component: JeannetteComponent},
       { path: 'autor/anette', component: AnetteComponent},
-      { path: 'autor/rodrigo', component: RodrigoComponent},
+      { path: 'autor/rodrigo', component: RodrigoComponent}, */
       /*rutas estaticas de colaboradores */
-      { path: 'colaborador/andreanunez', component:AndreaNComponent},
+      /* { path: 'colaborador/andreanunez', component:AndreaNComponent},
       { path: 'colaborador/andreaquirasco', component:AndreaQComponent},
-      { path: 'colaborador/gustavo', component: GustavoComponent},
+      { path: 'colaborador/gustavo', component: GustavoComponent}, */
       
 
     ]

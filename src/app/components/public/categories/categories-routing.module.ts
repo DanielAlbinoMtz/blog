@@ -14,7 +14,7 @@ const routes: Routes = [
     children: [
       { path: '', component: PrincipalComponent },
       /*rutas de una categoria */
-      { path: 'inversion', component: InversionComponent},/*este ya es un post de ejemplo */
+      { path: 'inversión', component: InversionComponent},/*este ya es un post de ejemplo */
       /*rutas de segunda categoria 'crecimiento/:crecimientoid' */
       { path: 'emprender', component: CrecimientoComponent},
 

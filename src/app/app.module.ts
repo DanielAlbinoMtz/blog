@@ -36,6 +36,8 @@ import { ArticlesTrendComponent } from './components/public/principal/minipost/t
 /*evitar los errores de recarga */
 import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { FiltroPipe } from './pipes/filtro.pipe';
+import { ArticuloService} from './services/articulo.service';
+import { SuscripcionService } from './services/suscripcion/suscripcion.service';
 
 @NgModule({
   declarations: [
@@ -86,7 +88,7 @@ import { FiltroPipe } from './pipes/filtro.pipe';
     
 
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  providers: [ArticuloService, SuscripcionService,{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

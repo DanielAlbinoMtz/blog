@@ -1,5 +1,7 @@
 <div id="principal" class="row">
-    <div class="col-12 col-xs-6 col-sm-12 col-md-12 col-lg-12 col-xl-12" *ngFor="let articulo of articulos; let i = index;  last as isLast">
+    <div class="col-12 col-xs-6 col-sm-12 col-md-12 col-lg-12 col-xl-12" 
+    *ngFor="let articulo of articulos; let i = index;  last as isLast">
+
         <a [routerLink]="['/post', articulo.id]">
         <div *ngIf="isLast" class="card text-white">
           <div class="imagen">
@@ -15,9 +17,7 @@
                 <div class="col col-sm-6 col-md-6 col-lg-2 col-xl-2 mt-3"><img class="clock" src="assets/clock.svg" alt="">{{articulo.tiempo}} minutos</div>
                 <div class="col col-sm-6 col-md-6 col-lg-2 col-xl-4 mt-3"><img class="clock" src="assets/calendar.svg" alt="">  {{articulo.fecha}}</div>
               </div>
-                
-                
-              
+               
             </div>
             </div>
           </div>
