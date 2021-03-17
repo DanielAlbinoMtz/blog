@@ -1,7 +1,8 @@
 <div class="row">
   <!-- inicia el boton que se oculta -->
   <div class="boton-oculto col-12">
-    <app-mininav></app-mininav>
+    <app-mininav (search)="handleSearch($event)"></app-mininav>
+    
   </div>
 
   <div class="col-12">
@@ -31,7 +32,7 @@
               </div>
             </a>
           </div>
-          </div>
+            </div>
 
 
             </div>
