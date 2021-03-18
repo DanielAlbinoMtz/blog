@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
 import { Articulo } from 'src/app/models/articulo';
-import { ArticuloService } from 'src/app/services/articulo.service';
+import { ArticuloService } from 'src/app/services/articulo/articulo.service';
 
 @Component({
   selector: 'app-inicio',
@@ -19,15 +19,22 @@ export class InicioComponent implements OnInit {
     fecha: '',
     foto: '',
     autor: '',
+    autor_id: '',
     perfil: '',
     categoria: '',
   }
 
    
-  /* photoPost = 'http://amaliath3code.com/laravel/public/article/';
+/* photoPost = 'http://amaliath3code.com/laravel/public/article/';
   photoAutor = 'http://amaliath3code.com/laravel/public/author/'; */
-  photoPost = 'https://blog.axincapital.app/laravel/public/article/';
-  photoAutor = 'https://blog.axincapital.app/laravel/public/author/';
+
+  //rutas para el desarrollo en produccion
+  /* photoPost = 'https://blog.axincapital.app/laravel/public/article/';
+  photoAutor = 'https://blog.axincapital.app/laravel/public/author/'; */
+
+  //rutas para el desarrollo local
+  photoPost = 'http://blog.local/article/';
+  photoAutor = 'http://blog.local/author/';
 
   id : any;
   articulos: Articulo[];
@@ -42,6 +49,7 @@ export class InicioComponent implements OnInit {
       this.articuloService.getAllArticulos().subscribe((data: Articulo[])=>{
        /* console.log(data);  */
        this.articulos = data;
+       /* console.log(data); */
         this.articulo = this.articulos.find((a)=>{
          return a.id == this.id;
          

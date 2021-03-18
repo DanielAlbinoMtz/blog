@@ -7,7 +7,7 @@
             </div>
             <h1 class="title">{{articulo.titulo}}</h1>
             <div class="div row name">
-                <div class="col-sm-12 col-md-12 col-lg-5"><img class="perfil" src="{{photoAutor}}{{articulo.perfil}}" alt=""> <a class="name" [routerLink]="['/autor', articulo.idAutor]"> {{articulo.autor}}</a></div>
+                <div class="col-sm-12 col-md-12 col-lg-5"><img class="perfil" src="{{photoAutor}}{{articulo.perfil}}" alt=""> <a class="name" [routerLink]="['/autor', articulo.autor_id]"> {{articulo.autor}}</a></div>
                 <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-3"><img class="clock" src="assets/clock.svg" alt=""> {{articulo.tiempo}} minutos</div>
                 <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-3"><img class="clock" src="assets/calendar.svg" alt="">  {{articulo.fecha}}</div>
               </div>

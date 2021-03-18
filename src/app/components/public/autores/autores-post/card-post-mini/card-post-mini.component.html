@@ -1,47 +1,28 @@
 <div class="row">
-    <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <a routerLink="/post">
+ 
+    <div class="col-12 col-md-6" *ngFor="let articulo of articulos;">
+        <a [routerLink]="['/post', articulo.id]">
     
     <div class="card mb-5 mb-md-5">
       <div class="imagen sobreponer">
-        <img src="https://res.cloudinary.com/dn1j6dpd7/image/fetch/c_fill,f_auto,q_auto,w_1688/https://success-cms.labs.livechatinc.com/app/uploads/2021/01/predict-cart-abandons-scaled-e1610117080835.jpg" class="card-img-top img-fluid" alt="...">
+        <img src="{{photoPost}}{{articulo.foto}}" class="card-img-top img-fluid" alt="...">
       </div>
       <div class="tag">
-        <a class="btn sobre">Finanzas</a>
+        <a class="btn sobre">{{articulo.categoria}}</a>
       </div>
         <div class="card-body">
-            <p class="card-text"><small class="text-muted">12 min read | Jan 08 |</small></p>
-            <p class="name"><img class="perfil img-fluid" src="assets/autores/Maria1.png" alt=""> Maria</p>
+            <p class="card-text"><small class="text-muted">{{articulo.tiempo}} minutos de lectura | {{articulo.fecha}} |</small></p>
+            <p class="name"><img class="perfil img-fluid" src="{{photoAutor}}{{articulo.perfil}}" alt="">{{articulo.autor}}</p>
           
-          <h5 class="card-title">How To Predict Cart Abandons and Save Them With Live Chat</h5>
-          <p class="card-text">Cart and checkout abandons are the biggest cause of lost revenue for any ecommerce store. Depending on your industry and the time period you review, you’ll see an average... <span>continuar leyendo</span> </p>
+          <h5 class="card-title">{{articulo.titulo}}</h5>
+          <p class="card-text">{{articulo.extracto}}... <span>continuar leyendo</span> </p>
          
         </div>
       </div>
          
         </a>
     </div>
-    <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <a routerLink="/post">
-    
-    <div class="card mb-auto mb-md-5">
-      <div class="imagen sobreponer">
-       <img src="https://res.cloudinary.com/dn1j6dpd7/image/fetch/c_fill,f_auto,q_auto,w_1688/https://success-cms.labs.livechatinc.com/app/uploads/2021/01/predict-cart-abandons-scaled-e1610117080835.jpg" class="card-img-top img-fluid" alt="...">
-      </div>
-      <div class="tag">
-        <a class="btn sobre">Finanzas</a>
-      </div>
-        <div class="card-body">
-            <p class="card-text"><small class="text-muted">12 min read | Jan 08 |</small></p>
-            <p class="name"><img class="perfil img-fluid" src="assets/autores/Maria1.png" alt=""> Maria</p>
-          
-          <h5 class="card-title">How To Predict Cart Abandons and Save Them With Live Chat</h5>
-          <p class="card-text">Cart and checkout abandons are the biggest cause of lost revenue for any ecommerce store. Depending on your industry and the time period you review, you’ll see an average... <span>continuar leyendo</span> </p>
-         
-        </div>
-      </div>
-         
-        </a>
-    </div>
+ 
+  
 
 </div>

@@ -6,16 +6,11 @@ export interface Articulo {
     tiempo?: string;
     fecha?: string;
     foto?: string;
+    autor_id?:string;
     autor?: string;
-    idAutor?:string;
     perfil?: string;
     categoria?: string;
 }
 
-export interface Autor{
-    id?:string;
-    nombre?:string;
-    descripcion?:string;
-    url?:string;
-}
+
 

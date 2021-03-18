@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import { environment } from 'src/environments/environment';
-import { Articulo } from '../models/articulo';
+import { Articulo } from '../../models/articulo';
 
 
 @Injectable({
@@ -12,7 +12,10 @@ import { Articulo } from '../models/articulo';
 })
 export class ArticuloService {
 /* baseURL = 'http://amaliath3code.com/api/'; */
-baseURL = 'https://blog.axincapital.app/api/';
+//entorno local
+baseURL = 'http://blog.local/api/';
+//entorno produccion
+/* baseURL = 'https://blog.axincapital.app/api/'; */
   constructor( private _http:HttpClient) { }
 
   public articulo: Articulo={
@@ -34,13 +37,7 @@ baseURL = 'https://blog.axincapital.app/api/';
       emprender   3
       mercados    4
       cripto      5 */
-  buscarArticulo( texto:string ){
-
-  }
-
-  getAutor(){
-    return this._http.get(this.baseURL+'autores');
-  }
+ 
 
   getArticulo(){ /*servicio para el minipost que es el primer cuadro este solo llamara al ultimo en el array */
     return this._http.get(this.baseURL+'articulos');/* .pipe(
