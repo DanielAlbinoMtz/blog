@@ -38,6 +38,7 @@ import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/c
 import { FiltroPipe } from './pipes/filtro.pipe';
 import { ArticuloService} from './services/articulo/articulo.service';
 import { SuscripcionService } from './services/suscripcion/suscripcion.service';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { SuscripcionService } from './services/suscripcion/suscripcion.service';
     ArticlesTrendComponent,
     FiltroPipe,
     
+    
    /*  CardPostComponent,
     CardPostMiniComponent */
   ],
@@ -82,7 +84,8 @@ import { SuscripcionService } from './services/suscripcion/suscripcion.service';
     PostModule,
     PostRoutingModule,
     CommonModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    NgxPaginationModule
     
     
     

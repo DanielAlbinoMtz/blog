@@ -27,7 +27,7 @@ import { CardMercadosThreeComponent } from './mercados/card-mercados-three/card-
 import { CardCriptoComponent } from './cripto/card-cripto/card-cripto.component';
 import { CardCriptoTwoComponent } from './cripto/card-cripto-two/card-cripto-two.component';
 import { CardCriptoThreeComponent } from './cripto/card-cripto-three/card-cripto-three.component';
-
+import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
 
 @NgModule({
   declarations: [PrincipalComponent, CardPostComponent, SuscribeComponent, SuscribeTwoComponent, PaginatorComponent, InversionComponent, CrecimientoComponent, MercadosComponent, CriptoComponent, CardInversionComponent, CardInversionTwoComponent, CardInversionTreeComponent, CardPostTwoComponent, CardPostTreeComponent, CardEmprenderComponent, CardEmprenderTwoComponent, CardEmprenderTreeComponent, CardMercadosComponent, CardMercadosTwoComponent, CardMercadosThreeComponent, CardCriptoComponent, CardCriptoTwoComponent, CardCriptoThreeComponent],
@@ -36,7 +36,8 @@ import { CardCriptoThreeComponent } from './cripto/card-cripto-three/card-cripto
     CategoriesRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    NgxPaginationModule
     
     
 

@@ -11,7 +11,7 @@ import { ArticuloService } from 'src/app/services/articulo/articulo.service';
 export class CardPostComponent implements OnInit {
 
   articulo: Articulo = {
-    id: null,
+    id: '',
     titulo: '',
     extracto: '',
     contenido: '',
@@ -28,12 +28,12 @@ export class CardPostComponent implements OnInit {
   photoAutor = 'http://amaliath3code.com/laravel/public/author/'; */
 
   //rutas para el desarrollo en produccion
-  /* photoPost = 'https://blog.axincapital.app/laravel/public/article/';
-  photoAutor = 'https://blog.axincapital.app/laravel/public/author/'; */
+  photoPost = 'https://blog.axincapital.app/laravel/public/article/';
+  photoAutor = 'https://blog.axincapital.app/laravel/public/author/';
 
   //rutas para el desarrollo local
-  photoPost = 'http://blog.local/article/';
-  photoAutor = 'http://blog.local/author/';
+  /* photoPost = 'http://blog.local/article/';
+  photoAutor = 'http://blog.local/author/'; */
 
   id : any;
   articulos: Articulo[];
@@ -43,7 +43,7 @@ export class CardPostComponent implements OnInit {
       this.activatedRoute.params.subscribe(params => {
         /* console.log(params.id); */
         this.id = params.id;
-      /* console.log(this.id); */
+      console.log(this.id);
       if(this.id){
         this.articuloService.getAllArticulos().subscribe((data: Articulo[])=>{
          /* console.log(data);  */

@@ -152,3 +152,24 @@ span{
 }
     }
 
+ /*estilos de paginador*/
+.my-pagination /deep/ .ngx-pagination .current{
+    background: #004fff!important;
+}
+
+.my-pagination /deep/ .ngx-pagination li{
+    border-radius: 0.125rem;
+    
+}
+
+@media (min-width: 800px){
+    .my-pagination /deep/ .ngx-pagination li{
+        
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;        
+    }
+}
+/*terminan estilos de paginador*/
+

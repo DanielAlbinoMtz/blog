@@ -11,15 +11,13 @@ export class SuscribeComponent implements OnInit {
 
   public form = { email: null }
 
-  constructor(private susService : SuscripcionService) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
   onSubmit(){
-    this.susService.subscribeAxin(this.form.email).subscribe(res=>{
-      console.log(this.form.email);
-    }, err=> console.log(err));
+    
     window.location.href='https://axincapital.com/#/registro/'+this.form.email;
   }
 

@@ -8,25 +8,26 @@ import { ArticuloService } from 'src/app/services/articulo/articulo.service';
   styleUrls: ['./card-emprender.component.css']
 })
 export class CardEmprenderComponent implements OnInit {
+  p: number = 1; 
 
-  articulos: Articulo;
+  articulos: Articulo[] = [];
   /* photoPost = 'http://amaliath3code.com/laravel/public/article/';
   photoAutor = 'http://amaliath3code.com/laravel/public/author/'; */
 
   //rutas para el desarrollo en produccion
-  /* photoPost = 'https://blog.axincapital.app/laravel/public/article/';
-  photoAutor = 'https://blog.axincapital.app/laravel/public/author/'; */
+  photoPost = 'https://blog.axincapital.app/laravel/public/article/';
+  photoAutor = 'https://blog.axincapital.app/laravel/public/author/';
 
   //rutas para el desarrollo local
-  photoPost = 'http://blog.local/article/';
-  photoAutor = 'http://blog.local/author/';
+  /* photoPost = 'http://blog.local/article/';
+  photoAutor = 'http://blog.local/author/'; */
 
   constructor(
     private articuloService: ArticuloService
   ) { }
 
   ngOnInit() {
-    this.articuloService.getCategoriaEmprender().subscribe(res => this.articulos = res)
+    this.articuloService.getCategoriaEmprender().subscribe((res:Articulo[]) => this.articulos = res)
     
   }
 }

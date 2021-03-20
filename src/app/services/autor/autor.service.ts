@@ -9,9 +9,9 @@ import { Autor } from 'src/app/models/autor';
 export class AutorService {
 /* baseURL = 'http://amaliath3code.com/api/'; */
 //entorno local
-baseURL = 'http://blog.local/api/';
+/* baseURL = 'http://blog.local/api/'; */
 //entorno produccion
-/* baseURL = 'https://blog.axincapital.app/api/'; */
+baseURL = 'https://blog.axincapital.app/api/';
   constructor( private _http:HttpClient) { }
 
   public autor: Autor={
@@ -27,6 +27,10 @@ baseURL = 'http://blog.local/api/';
   getAutor(id){
     return this._http.get(`${this.baseURL}autores/${id}`)
     
+  }
+
+  getAllAutor(){
+    return this._http.get(this.baseURL+'autores');
   }
 
 

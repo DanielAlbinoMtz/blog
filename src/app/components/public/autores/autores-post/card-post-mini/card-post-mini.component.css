@@ -29,6 +29,7 @@
  /*    transform-origin: 0 0;*/
     transition: transform .25s, visibility .25s ease-in; 
     overflow: hidden;
+    min-height: 480px;
 }
 
 .card:hover{
@@ -93,6 +94,7 @@ span{
     border: none;
     background: #f6f6f7;
     font-size: 0.8rem;
+    text-transform: capitalize;
 }
 .tag{
     position: relative;
@@ -105,3 +107,24 @@ span{
 }
 
 }
+
+/*estilos de paginador*/
+.my-pagination /deep/ .ngx-pagination .current{
+    background: #004fff!important;
+}
+
+.my-pagination /deep/ .ngx-pagination li{
+    border-radius: 0.125rem;
+    
+}
+
+@media (min-width: 800px){
+    .my-pagination /deep/ .ngx-pagination li{
+        
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;        
+    }
+}
+/*terminan estilos de paginador*/

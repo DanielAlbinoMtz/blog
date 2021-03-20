@@ -5,65 +5,32 @@
 
   <div class="tarjetas">
     <div class="card-deck row justify-content-center">
+     
+      <div *ngFor="let autor of autores">
       <div class="card">
-        <a routerLink="/autor/judith">
+        <a [routerLink]="['/autor', autor.id]">
           <div class="imagen">
             <img
               class="perfil card-img-top"
-              src="assets/autores/Judith2.png"
+              src="{{photoAutor}}{{autor.mediana}}"
               alt="Card image cap"
             />
           </div>
           <div class="card-body">
-            <h5 class="card-title">Judith Medina</h5>
+            <h5 class="card-title">{{autor.nombre}}</h5>
             <p class="card-text">
-              Soy Judith Medina desde siempre tuve gusto por el mundo bursátil.
-              Estudie Administración...
+              {{autor.descripcion}}...
             </p>
           </div>
         </a>
       </div>
+    </div>
 
-      <div class="card">
-        <a routerLink="/autor/maria">
-          <div class="imagen">
-            <img
-              class="perfil card-img-top"
-              src="assets/autores/Maria2.png"
-              alt="Card image cap"
-            />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Lupita Aguilera</h5>
-            <p class="card-text">
-              Soy Lupita estudié la Licenciatura en Administración con
-              especialización en Turismo en el IEST-Anahuac...
-            </p>
-          </div>
-        </a>
-      </div>
-
-      <div class="card">
-        <a routerLink="/autor/rodrigo">
-          <div class="imagen">
-            <img
-              class="perfil card-img-top"
-              src="assets/autores/Rodrigo2.png"
-              alt="Card image cap"
-            />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Rodrigo Alfaro</h5>
-            <p class="card-text">
-              Soy rodrigo alfaro, desde el 2013 me involucré el en mundo de la bolsa, como pasante...
-            </p>
-          </div>
-        </a>
-      </div>
+      
 
     </div>
 
-    <div class="card-deck row justify-content-center">
+   <!--  <div class="card-deck row justify-content-center">
 
       <div class="card">
         <a routerLink="/autor/mario">
@@ -184,7 +151,8 @@
           </div>
         </div>
       </a>
-    </div>
+    </div>-->
 
-  </div>
+  </div> 
 </div>
+

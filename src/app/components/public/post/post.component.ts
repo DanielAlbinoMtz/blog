@@ -14,12 +14,12 @@ export class PostComponent implements OnInit {
   }
 
  //rutas para el desarrollo en produccion
-  /* photoPost = 'https://blog.axincapital.app/laravel/public/article/';
-  photoAutor = 'https://blog.axincapital.app/laravel/public/author/'; */
+  photoPost = 'https://blog.axincapital.app/laravel/public/article/';
+  photoAutor = 'https://blog.axincapital.app/laravel/public/author/';
 
   //rutas para el desarrollo local
-  photoPost = 'http://blog.local/article/';
-  photoAutor = 'http://blog.local/author/';
+  /* photoPost = 'http://blog.local/article/';
+  photoAutor = 'http://blog.local/author/'; */
   filtroValor = ''
 
   constructor(
@@ -28,12 +28,12 @@ export class PostComponent implements OnInit {
 
   ngOnInit() {
     //produccion
-    /* this._http.get('https://blog.axincapital.app/api/articulos').subscribe
-    ((data: any[]) => this.articulos = data) */
+    this._http.get('https://blog.axincapital.app/api/articulos').subscribe
+    ((data: any[]) => this.articulos = data)
 
     //prueba local
-    this._http.get('http://blog.local/api/articulos').subscribe
-    ((data: any[]) => this.articulos = data)
+    /* this._http.get('http://blog.local/api/articulos').subscribe
+    ((data: any[]) => this.articulos = data) */
   }
 
   articulos = []

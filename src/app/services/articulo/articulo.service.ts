@@ -13,9 +13,9 @@ import { Articulo } from '../../models/articulo';
 export class ArticuloService {
 /* baseURL = 'http://amaliath3code.com/api/'; */
 //entorno local
-baseURL = 'http://blog.local/api/';
+/* baseURL = 'http://blog.local/api/'; */
 //entorno produccion
-/* baseURL = 'https://blog.axincapital.app/api/'; */
+baseURL = 'https://blog.axincapital.app/api/';
   constructor( private _http:HttpClient) { }
 
   public articulo: Articulo={

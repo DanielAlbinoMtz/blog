@@ -22,12 +22,12 @@ autor: Autor = {
 }
 
   //rutas para el desarrollo en produccion
-  /* photoPost = 'https://blog.axincapital.app/laravel/public/article/';
-  photoAutor = 'https://blog.axincapital.app/laravel/public/author/'; */
+  photoPost = 'https://blog.axincapital.app/laravel/public/article/';
+  photoAutor = 'https://blog.axincapital.app/laravel/public/author/';
 
   //rutas para el desarrollo local
-  photoPost = 'http://blog.local/article/';
-  photoAutor = 'http://blog.local/author/';
+  /* photoPost = 'http://blog.local/article/';
+  photoAutor = 'http://blog.local/author/'; */
 
   id : any;
   autores : Autor; 

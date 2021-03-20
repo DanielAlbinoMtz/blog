@@ -14,12 +14,12 @@ export class CriptoComponent implements OnInit {
   photoAutor = 'http://amaliath3code.com/laravel/public/author/'; */
 
   //rutas para el desarrollo en produccion
-  /* photoPost = 'https://blog.axincapital.app/laravel/public/article/';
-  photoAutor = 'https://blog.axincapital.app/laravel/public/author/'; */
+  photoPost = 'https://blog.axincapital.app/laravel/public/article/';
+  photoAutor = 'https://blog.axincapital.app/laravel/public/author/';
 
   //rutas para el desarrollo local
-  photoPost = 'http://blog.local/article/';
-  photoAutor = 'http://blog.local/author/';
+ /*  photoPost = 'http://blog.local/article/';
+  photoAutor = 'http://blog.local/author/'; */
   constructor(
     private articuloService: ArticuloService
   ) { }

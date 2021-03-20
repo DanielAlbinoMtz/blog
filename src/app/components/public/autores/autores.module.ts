@@ -25,6 +25,9 @@ import { GustavoComponent } from './all-autors/gustavo/gustavo.component';
 import { AnetteComponent } from './all-autors/anette/anette.component';
 import { JeannetteComponent } from './all-autors/jeannette/jeannette.component';
 import { RodrigoComponent } from './all-autors/rodrigo/rodrigo.component';
+/* import { PaginatePipe } from '../../../pipes/paginate.pipe'; */
+import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
+
 
 
 
@@ -43,7 +46,13 @@ import { RodrigoComponent } from './all-autors/rodrigo/rodrigo.component';
     JoseComponent, 
     MarioComponent, 
     AndreaNComponent, 
-    AndreaQComponent, GustavoComponent, AnetteComponent, JeannetteComponent, RodrigoComponent, /* AutoresPostComponent */],
+    AndreaQComponent, 
+    GustavoComponent, 
+    AnetteComponent, 
+    JeannetteComponent, 
+    RodrigoComponent,
+    
+     /* AutoresPostComponent */],
 
     
 
@@ -51,6 +60,8 @@ import { RodrigoComponent } from './all-autors/rodrigo/rodrigo.component';
     CommonModule,
     AutoresRoutingModule,
     RouterModule,
+    NgxPaginationModule
+    
     
 
   ]

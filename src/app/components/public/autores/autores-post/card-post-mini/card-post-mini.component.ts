@@ -10,6 +10,8 @@ import { ArticuloService } from 'src/app/services/articulo/articulo.service';
 })
 export class CardPostMiniComponent implements OnInit {
 
+  p: number = 1;
+
   articulo: Articulo = {
     id: null,
     titulo: '',
@@ -28,15 +30,15 @@ export class CardPostMiniComponent implements OnInit {
   photoAutor = 'http://amaliath3code.com/laravel/public/author/'; */
 
   //rutas para el desarrollo en produccion
-  /* photoPost = 'https://blog.axincapital.app/laravel/public/article/';
-  photoAutor = 'https://blog.axincapital.app/laravel/public/author/'; */
+  photoPost = 'https://blog.axincapital.app/laravel/public/article/';
+  photoAutor = 'https://blog.axincapital.app/laravel/public/author/';
 
   //rutas para el desarrollo local
-  photoPost = 'http://blog.local/article/';
-  photoAutor = 'http://blog.local/author/';
+  /* photoPost = 'http://blog.local/article/';
+  photoAutor = 'http://blog.local/author/'; */
 
   id : any;
-  articulos: Articulo[];
+  articulos: Articulo[] = [];
 
   constructor(private activatedRoute: ActivatedRoute,  
     private articuloService: ArticuloService) { 
@@ -55,9 +57,12 @@ export class CardPostMiniComponent implements OnInit {
         }, (err) => {console.log(err);});
       } 
     });
-    }
+    }//aqui cierra el constructor
+
+
 
   ngOnInit(): void {
   }
 
+  
 }
